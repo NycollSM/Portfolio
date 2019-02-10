@@ -1,0 +1,37 @@
+#projects{
+    width: 100%;
+    margin-top: 100px;
+}
+#projects > div {
+    border: 2px solid blueviolet;
+    height: 200px;
+    width: 30%;
+    margin: 1%;
+    display: inline-block;
+}
+
+
+/*about*/
+#about{
+    margin-top: 1%;
+}
+.photo-about{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+form{
+    border: 2px solid black;
+    margin-top: 50px;
+}
+label{ 
+    margin: 20px
+}
+input{
+    margin: 0 auto;
+    width: 50%;
+    font-size: 18px;
+    padding: 10px;
+    height: 35px;
+    display: block;
+}

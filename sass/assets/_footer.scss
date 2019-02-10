@@ -1,0 +1,24 @@
+.footer{
+    height: 75px;
+}
+.links{
+    height: 50px;
+    width: 50px;
+    display: block
+}
+.githubLink{
+    background-image: url('../images/github-icon.png');
+}
+.gmailLink{
+    background-image: url('../../images/gmail-icon.svg');
+}
+.linkedinLikn{
+    background-image: url('../../images/linkedin-icon.svg');
+}
+.twitterLink{
+ background-image: url('../../images/twitter-icon.svg');
+}
+#menufooter > li{
+    float: left;
+    margin: 10px;
+}

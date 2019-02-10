@@ -1,14 +1,18 @@
 #projects{
     width: 100%;
     margin-top: 100px;
+    height: 70vh;
+    border: 2px solid $color-red;
 }
 #projects > div {
-    border: 2px solid blueviolet;
-    height: 200px;
-    width: 30%;
-    margin: 1%;
+    margin: 0 auto;
+    width: 32%;
     display: inline-block;
+    border: 2px solid $color-red;
 }
+ #apiLyrics{
+     background-image: url("../../images/lyricsApi.JPG");
+ }
 
 
 /*about*/

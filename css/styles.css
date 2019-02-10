@@ -18,17 +18,18 @@ a {
   color: #E82623; }
 
 .nameTransition {
-  background: antiquewhite;
-  height: 100vh;
-  border: 2px solid #9EFFF6;
-  width: 100%; }
+  height: 110px;
+  width: 100%;
+  border-bottom: 2px solid #E82623; }
 
 .cherry-img {
-  padding: 10px;
-  height: 50px;
-  width: 50px; }
+  padding: 5px;
+  height: 45px;
+  width: 45px; }
 
 #menu {
+  font-size: 20px;
+  font-weight: lighter;
   float: right;
   width: 100%; }
 
@@ -37,8 +38,13 @@ a {
   width: 7%;
   height: 30px;
   float: left;
-  cursor: pointer;
-  border: #9EFFF6 2px solid; }
+  color: #E82623;
+  cursor: pointer; }
+  #menu > li:hover {
+    font-weight: bold;
+    padding: 2px;
+    color: #505657;
+    background-color: #9EFFF6; }
 
 #projects {
   width: 100%;
@@ -84,16 +90,16 @@ input {
   display: block; }
 
 .githubLink {
-  background-image: url("../images/github-icon.png"); }
+  background-image: url("../../images/github.png"); }
 
 .gmailLink {
-  background-image: url("../../images/gmail-icon.svg"); }
+  background-image: url("../../images/gmail.svg"); }
 
 .linkedinLikn {
-  background-image: url("../../images/linkedin-icon.svg"); }
+  background-image: url("../../images/linkedin.svg"); }
 
 .twitterLink {
-  background-image: url("../../images/twitter-icon.svg"); }
+  background-image: url("../../images/twitter.svg"); }
 
 #menufooter > li {
   float: left;

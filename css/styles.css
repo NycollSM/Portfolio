@@ -50,7 +50,6 @@ a {
     background-color: #9EFFF6; }
 
 #projects {
-  width: 100%;
   margin-top: 100px;
   height: 70vh;
   border: 2px solid #E82623; }
@@ -61,28 +60,36 @@ a {
   display: inline-block;
   border: 2px solid #E82623; }
 
-#apiLyrics {
-  background-image: url("../../images/lyricsApi.JPG"); }
+.lyrics, .psd, .api {
+  height: 400px;
+  width: 400px; }
 
 /*about*/
 #about {
-  margin-top: 1%; }
+  margin-top: 13%;
+  height: 60vh; }
 
 .photo-about {
-  height: 200px;
-  width: 200px;
-  border-radius: 100%; }
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  margin-bottom: 20px; }
 
 form {
+  height: 60vh;
   border: 2px solid black;
   margin-top: 50px; }
 
 label {
-  margin: 20px; }
+  margin: 20px;
+  height: 20vh;
+  color: #E82623;
+  float: left; }
 
 input {
+  color: #505657;
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
   font-size: 18px;
   padding: 10px;
   height: 35px;

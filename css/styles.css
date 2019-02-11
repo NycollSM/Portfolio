@@ -18,7 +18,7 @@ a {
   color: #E82623; }
 
 .header {
-  height: 40vh; }
+  height: 10vh; }
 
 .nameTransition {
   height: 110px;
@@ -43,31 +43,37 @@ a {
   float: left;
   color: #E82623;
   cursor: pointer; }
-  #menu > li:hover {
+  #menu > li:hover::after {
     font-weight: bold;
-    padding: 2px;
-    color: #505657;
-    background-color: #9EFFF6; }
+    position: absolute;
+    content: '';
+    height: 10px;
+    background: #9EFFF6; }
 
 #projects {
-  margin-top: 100px;
-  height: 70vh;
-  border: 2px solid #E82623; }
+  margin-top: 20vh; }
 
 #projects > div {
-  margin: 0 auto;
-  width: 32%;
+  width: 30%;
+  height: 65vh;
   display: inline-block;
-  border: 2px solid #E82623; }
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+  margin: 0 auto; }
+
+#projects > div > p {
+  padding: 15px; }
 
 .lyrics, .psd, .api {
-  height: 400px;
-  width: 400px; }
+  height: 350px;
+  width: 350px;
+  text-align: center; }
 
 /*about*/
 #about {
-  margin-top: 13%;
-  height: 60vh; }
+  margin: 0 auto;
+  height: 70vh; }
 
 .photo-about {
   height: 300px;

@@ -1,5 +1,5 @@
 .header{
-    height: 40vh;
+    height: 10vh;
 }
 .nameTransition{
     height: 110px;
@@ -25,10 +25,11 @@
     float: left;
     color: $color-red;
     cursor: pointer;
-    &:hover{
+    &:hover::after{
         font-weight: bold;
-        padding: 2px;
-        color: $global-font-color;
-        background-color: $color-contrast;
+            position: absolute;
+            content: '';
+            height: 10px;
+            background: $color-contrast;
     }
 }

@@ -1,24 +1,32 @@
 .footer{
+    text-align: center;
+    width: 100%;
     height: 75px;
+    background: $color-contrast;
 }
-.links{
-    height: 50px;
-    width: 50px;
-    display: block
-}
-.githubLink{
-    background-image: url('../../images/github.png');
-}
-.gmailLink{
-    background-image: url('../../images/gmail.svg');
-}
-.linkedinLikn{
-    background-image: url('../../images/linkedin.svg');
-}
-.twitterLink{
- background-image: url('../../images/twitter.svg');
+#menufooter{
+    width: 50%;
+    margin: 0 auto;
 }
 #menufooter > li{
+    padding: 15px;
+    width: 15%;
     float: left;
     margin: 10px;
+    position: relative;
+    cursor: pointer;
+    &:after{
+        position: absolute;
+        content: '';
+        top: 25px;
+        display: block;
+        width: 70%;
+        background: $color-red;
+        height: 5px;
+        z-index: -1;
+    }
+    &:hover:after{
+    z-index: 1;
+    color: $global-font-color;
+    }
 }

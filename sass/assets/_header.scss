@@ -21,14 +21,22 @@
     padding: 10px;
     width: 7%;
     height: 30px;
-    float: left;
+    float: right;
     color: $color-red;
     cursor: pointer;
-    &:hover::after{
-        font-weight: bold;
+    position: relative;
+    &:after{
         position: absolute;
         content: '';
-        height: 10px;
-        background: $color-contrast;
+        top: 30px;
+        display: block;
+        width: 80%;
+        background: $color-red;
+        height: 5px;
+        z-index: -1;
+    }
+    &:hover:after{
+    z-index: 1;
+    color: $global-font-color;
     }
 }

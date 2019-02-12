@@ -72,3 +72,13 @@ input{
         color: $color-contrast;
     }
 }
+.links{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    display: block;
+}
+#anchors > a > img{
+    height: 50px;
+    width: 50px;
+}

@@ -1,9 +1,10 @@
 #projects{
     margin-top: 20vh;
-    height: 65vh;
+    height: 80vh;
 }
 #projects > div {
     width: 30%;
+    height: 70vh;
     display: inline-block;
     padding: 10px;
     text-align: left;
@@ -23,7 +24,7 @@
 /*about*/
 #about{
     margin: 0 auto;
-    height: 65vh;
+    height: 70vh;
 }
 .photo-about{
     height: 300px;
@@ -56,11 +57,8 @@ input{
     height: 50px;
     margin: 30px;
     width: 80%;
-    &:focus{
-    border: 2px solid $color-red;
-    }
 }
-.button-form{
+#send-form{
     border-radius: 4px;
     color: $global-font-color;
     border: 2px solid $color-red;
@@ -69,5 +67,8 @@ input{
     font-size: 20px;
     width: 50%;
     height: 50px;
-
+    &:hover{
+        background: $color-red;
+        color: $color-contrast;
+    }
 }

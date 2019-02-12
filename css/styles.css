@@ -21,8 +21,11 @@ a {
   height: 5vh; }
 
 .nameTransition {
+  z-index: 1;
   text-align: center;
+  position: fixed;
   height: 110px;
+  background: #ffffff;
   width: 100%;
   border-bottom: 2px solid #E82623; }
 
@@ -32,6 +35,7 @@ a {
   width: 45px; }
 
 #menu {
+  padding-top: 110px;
   font-size: 20px;
   width: 100%;
   float: right; }
@@ -54,11 +58,10 @@ a {
     height: 5px;
     z-index: -1; }
   #menu > li:hover:after {
-    z-index: 1;
     color: #505657; }
 
 #projects {
-  margin-top: 20vh;
+  margin-top: 40vh;
   height: 80vh; }
 
 #projects > div {
@@ -163,7 +166,7 @@ input {
     width: 70%;
     background: #E82623;
     height: 5px;
-    z-index: -1; }
+    z-index: -2; }
   #menufooter > li:hover:after {
     z-index: 1;
     color: #505657; }

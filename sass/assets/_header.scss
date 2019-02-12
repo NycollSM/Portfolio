@@ -1,9 +1,13 @@
 .header{
     height: 5vh;
+    
 }
 .nameTransition{
+    z-index: 1;
     text-align: center;
+    position: fixed;
     height: 110px;
+    background: #ffffff;
     width: 100%;
     border-bottom: 2px solid $color-red;
 }
@@ -13,6 +17,7 @@
     width: 45px;
 }
 #menu{
+    padding-top: 110px;
     font-size: 20px;
     width: 100%;
     float: right;
@@ -36,7 +41,6 @@
         z-index: -1;
     }
     &:hover:after{
-    z-index: 1;
     color: $global-font-color;
     }
 }

@@ -1,7 +1,8 @@
 .header{
-    height: 10vh;
+    height: 5vh;
 }
 .nameTransition{
+    text-align: center;
     height: 110px;
     width: 100%;
     border-bottom: 2px solid $color-red;
@@ -13,10 +14,8 @@
 }
 #menu{
     font-size: 20px;
-    font-weight: lighter;
-    float: right;
     width: 100%;
-    
+    float: right;
 }
 #menu > li{
     padding: 10px;
@@ -27,9 +26,9 @@
     cursor: pointer;
     &:hover::after{
         font-weight: bold;
-            position: absolute;
-            content: '';
-            height: 10px;
-            background: $color-contrast;
+        position: absolute;
+        content: '';
+        height: 10px;
+        background: $color-contrast;
     }
 }

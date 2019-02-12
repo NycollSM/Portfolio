@@ -18,9 +18,10 @@ a {
   color: #E82623; }
 
 .header {
-  height: 10vh; }
+  height: 5vh; }
 
 .nameTransition {
+  text-align: center;
   height: 110px;
   width: 100%;
   border-bottom: 2px solid #E82623; }
@@ -32,9 +33,8 @@ a {
 
 #menu {
   font-size: 20px;
-  font-weight: lighter;
-  float: right;
-  width: 100%; }
+  width: 100%;
+  float: right; }
 
 #menu > li {
   padding: 10px;
@@ -51,11 +51,11 @@ a {
     background: #9EFFF6; }
 
 #projects {
-  margin-top: 20vh; }
+  margin-top: 20vh;
+  height: 65vh; }
 
 #projects > div {
   width: 30%;
-  height: 65vh;
   display: inline-block;
   padding: 10px;
   text-align: left;
@@ -73,7 +73,7 @@ a {
 /*about*/
 #about {
   margin: 0 auto;
-  height: 70vh; }
+  height: 65vh; }
 
 .photo-about {
   height: 300px;
@@ -81,25 +81,43 @@ a {
   border-radius: 100%;
   margin-bottom: 20px; }
 
+/*form*/
+.contact {
+  float: left;
+  font-size: 22px; }
+
 form {
-  height: 60vh;
-  border: 2px solid black;
-  margin-top: 50px; }
+  margin-top: 3%;
+  font-size: 18px; }
+
+.label {
+  margin: 0 auto;
+  width: 73%; }
 
 label {
-  margin: 20px;
-  height: 20vh;
-  color: #E82623;
-  float: left; }
+  width: 10%;
+  float: left;
+  text-align: justify; }
 
 input {
-  color: #505657;
-  margin: 0 auto;
-  width: 70%;
   font-size: 18px;
+  padding: 15px;
+  color: #E82623;
+  height: 50px;
+  margin: 30px;
+  width: 80%; }
+  input:focus {
+    border: 2px solid #E82623; }
+
+.button-form {
+  border-radius: 4px;
+  color: #505657;
+  border: 2px solid #E82623;
+  background: transparent;
   padding: 10px;
-  height: 35px;
-  display: block; }
+  font-size: 20px;
+  width: 50%;
+  height: 50px; }
 
 .footer {
   height: 75px; }

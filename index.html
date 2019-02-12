@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
 </head>
-<body>
+<body>     
+    <div id="headername" class="nameTransition">
+      <img src="images/cherry.png" class="cherry-img" alt="cherry logo">
+        <p class="name">Nycoll Soto M</p>
+        <p class="career">Front-End Developer</p>
+    </div>
     <div class="mainContainer">
         <div class="header">
-            <div id="headername" class="nameTransition">
-                <img src="images/cherry.png" class="cherry-img" alt="cherry logo">
-                <p class="name">Nycoll Soto M</p>
-                <p class="career">Front-End Developer</p>
-            </div>
             <ul id="menu">
                 <li>Projects</li>
                 <li>Github</li>
@@ -51,31 +51,40 @@
                     I spend the most of the time learning new things about my career, because this like a hobby for me, I mean.. I really love what I do every day. I'm Contemporary dancer as well.
                 </p>
             </div>
+            <p class="contact">Contact me</p> <br>
             <form action="">
-                <label for="name">Name</label>
-                <input type="text">
-                <label for="email">Email</label>
-                <input type="text">
-                <label for="message">Message</label>
-                <input type="text">
+                <div class="label">
+                    <label for="name" >Name</label>
+                    <input type="text">
+                </div>
+                
+                <div class="label">
+                    <label for="email" >Email</label>
+                    <input type="text">
+                </div>       
+                <div class="label">
+                    <label for="message" >Message</label>
+                    <input type="text">
+                </div>
+                <button type="submit" class="button-form">Send</button>
             </form>
         </div>
-        <div class="footer">
-            <div id="anchors">
-                <a href="https://github.com/NycollSM" class="links githubLink">Github</a>
-                <a href="nycollsotomorales21@gmail.com" class="links gmailLink">Mail</a>
-                <a href="https://www.linkedin.com/in/nycoll-soto-morales-6b2430169/" class="links linkedinLink">In</a>
-                <a href="https://twitter.com/NycollSm" class="links twitterLink">twitter</a>
-            </div>
-            <div id="menufooter">
-                <ul>
-                    <li>Projects</li>
-                    <li> Github</li>
-                    <li>About me</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
+        <div id="anchors">
+          <a href="https://github.com/NycollSM" class="links githubLink">Github</a>
+          <a href="nycollsotomorales21@gmail.com" class="links gmailLink">Mail</a>
+          <a href="https://www.linkedin.com/in/nycoll-soto-morales-6b2430169/" class="links linkedinLink">In</a>
+          <a href="https://twitter.com/NycollSm" class="links twitterLink">twitter</a>
         </div>
-    </div>  
+    </div>
+    <div class="footer">
+        <div id="menufooter">
+          <ul>
+            <li>Projects</li>
+            <li> Github</li>
+            <li>About me</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+    </div>
 </body>
 </html>

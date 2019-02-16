@@ -66,9 +66,9 @@ a {
 
 #projects > div {
   width: 45%;
-  height: 40vh;
+  height: 50vh;
   display: inline-block;
-  padding: 2%;
+  padding-right: 2%;
   font-size: 16px;
   margin: 0 auto; }
 
@@ -81,12 +81,36 @@ a {
   width: 80%;
   text-align: center; }
 
+/*Github activity*/
+#activityGithub {
+  margin: 20vh 0;
+  height: 100vh; }
+
+.git_info {
+  text-align: initial;
+  background: #eeeeee;
+  padding: 2%;
+  border-left: 3px solid #E82623;
+  border-bottom: 1px solid #E82623;
+  margin: 10px;
+  height: 110px;
+  width: 40%;
+  display: inline-block; }
+  .git_info:hover {
+    background: #E82623;
+    color: #9EFFF6; }
+    .git_info:hover a {
+      color: #9EFFF6; }
+
+.git_info > p {
+  padding: 3px; }
+
 /*about*/
 #about {
-  margin: 0 auto;
-  height: 70vh; }
+  height: 100vh; }
 
 .photo-about {
+  margin: 20vh 0;
   height: 300px;
   width: 300px;
   border-radius: 100%;

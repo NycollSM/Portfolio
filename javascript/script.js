@@ -5,24 +5,25 @@ function fetchJson() {
       .then(res => res.json())
       .then(data => {
       console.log(data);
-      for (const repositories of data){  
+      
+      for (const repositories of data){ 
+        const divInfo = document.createElement('div');
+        divInfo.setAttribute('class', 'git_info');
         const repoName = document.createElement("p");
-        repoName.innerText = repositories.repo.name;
-        console.log(repositories.repo.name);
+        repoName.innerText = 'Repository:' + ' ' + repositories.repo.name;
         const commit = document.createElement('p');
-        commit.innerText = repositories.payload.commits[0].message;
-        console.log(repositories.payload.commits[0].message);
+        commit.innerText = 'Commit:' + ' ' +repositories.payload.commits[0].message;
         const url = document.createElement('a');
         url.setAttribute('href', repositories.repo.url);
         url.innerText = 'url';
         console.log(repositories.repo.url);
         const date = document.createElement('p');
         date.innerText = repositories.created_at;
-        console.log(repositories.created_at); 
-        div.appendChild(repoName);
-        div.appendChild(commit);
-        div.appendChild(url);
-        div.appendChild(date);
+        divInfo.appendChild(repoName);
+        divInfo.appendChild(commit);
+        divInfo.appendChild(date);
+        divInfo.appendChild(url);
+        div.appendChild(divInfo);
       } 
     });
 } fetchJson();

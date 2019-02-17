@@ -10,39 +10,38 @@
 </head>
 <body>     
     <div id="headername" class="nameTransition">
-        <img src="images/cherry.png" class="cherry-img" alt="cherry logo">
-        <p class="name">Nycoll Soto M</p>
-        <p class="career">Front-End Developer</p>
+        <img src="images/cherry.png" class="logo" alt="cherry logo">
+        <p class="name-header-transition">Nycoll Soto M</p>
+        <p class="career-header-transition">Front-End Developer</p>
     </div>
     <div class="container">
         <div class="header">
             <ul id="menu">
-                <li>Projects</li>
-                <li>Github</li>
-                <li>About me</li>
-                <li>Contact</li>
+                <li class="menu__items">Contact</li>
+                <li class="menu__items">About me</li>
+                <li class="menu__items">Github</li>
+                <li class="menu__items">Projects</li>
             </ul>
         </div>
-        <div class="bodyContent">      
+        <div class="content">      
             <div id="projects">
+                <h2>Projects</h2>
                 <img src="" alt="">
                 <div>
-                    <img src="images/lyrics.png"  class='lyrics' alt="about project with json songs and lyrics requets">
+                    <img src="images/lyrics.png"  class="img-projects" alt="about project with json songs and lyrics requets">
                     <p>This project is about songs that are saved from JSON file and I get lyrics at the same time</p>
                 </div>
                 <div>
-                    <img src="images/Cudaresponsive.png" alt="" class="api">
+                    <img src="images/Cudaresponsive.png" alt="" class="img-projects">
                     <p>I created this web page in class using responsive and good pranctices of HTML and CSS.</p>
                 </div>
                 <div> 
-                    <img src="images/responsive1.png" alt="" class="psd">
+                    <img src="images/responsive1.png" alt="" class="img-projects">
                     <p>It is a web page using Sass and liquid elements to create responsive</p>
                 </div>
             </div>
             <div id="activityGithub">
-                <div></div>
-                <div></div>
-                <div></div>
+                <h2>Github Activity</h2>
             </div>
             <div id="about">
                 <img src="images/about1.jpg" alt="" class="photo-about">
@@ -50,22 +49,22 @@
                     I spend the most of the time learning new things about my career, because this like a hobby for me, I mean.. I really love what I do every day. I'm Contemporary dancer as well.
                 </p>
             </div>
-            <p class="contact">Contact me</p> <br>
+            <h2>Contact me</h2> 
             <form action="">
                 <div class="label">
-                    <label for="name" >Name</label>
-                    <input type="text">
+                    <label for="name" class="label__form">Name</label>
+                    <input type="text" id="name" class="input__form">
                 </div>
                 
                 <div class="label">
-                    <label for="email" >Email</label>
-                    <input type="text">
+                    <label for="email" class="label__form">Email</label>
+                    <input type="text" class="input__form" id="email">
                 </div>       
                 <div class="label">
-                    <label for="message" >Message</label>
-                    <input type="text">
+                    <label for="message"class="label__form">Message</label>
+                    <input type="text"class="input__form"  id="message">
                 </div>
-                <input type="button" value="Send" id="send-form">
+                <input type="button" value="Send" class="button__form" id="send-form">
             </form>
         </div>
     </div>
@@ -77,10 +76,10 @@
           <a href="https://twitter.com/NycollSm" target= '_black' class="links"><img src="images/twitter-logo-silhouette.png" alt=""></a>
         </div>  
             <ul id="menufooter">
-              <li>Projects</li>
-              <li> Github</li>
-              <li>About me</li>
-              <li>Contact</li>
+              <li class="menu__items--footer">Projects</li>
+              <li class="menu__items--footer"> Github</li>
+              <li class="menu__items--footer">About me</li>
+              <li class="menu__items--footer">Contact</li>
             </ul>
     </div>
     <script src="javascript/script.js"></script>

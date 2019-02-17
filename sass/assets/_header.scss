@@ -1,6 +1,5 @@
 .header{
-    height: 5vh;
-    
+    height: 5vh;    
 }
 .nameTransition{
     z-index: 1;
@@ -11,7 +10,7 @@
     width: 100%;
     border-bottom: 2px solid $color-red;
 }
-.cherry-img{
+.logo{
     padding: 5px;
     height: 45px;
     width: 45px;
@@ -22,7 +21,7 @@
     width: 100%;
     float: right;
 }
-#menu > li{
+.menu__items{
     padding: 10px;
     width: 7%;
     height: 30px;

@@ -1,5 +1,5 @@
 #projects{
-    margin-top: 40vh;
+    margin-top: 15vh;
     height: 100vh;
 }
 #projects > div {
@@ -9,7 +9,6 @@
     padding-right: 2%;
     font-size: 16px;
     margin: 0 auto;
-    
 }
 #projects > div > p {
     padding: 15px;
@@ -41,6 +40,7 @@
     &:hover{
         background: $color-red;
         color: $color-contrast;
+        transition: 1.3s; 
     a{
         color: $color-contrast;
     }
@@ -93,6 +93,7 @@ form{
     width: 50%;
     height: 50px;
     &:hover{
+        transition: 0.70s;
         background: $color-red;
         color: $color-contrast;
     }

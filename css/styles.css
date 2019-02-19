@@ -21,14 +21,9 @@ a {
   padding: 0 2%;
   font-size: 18px; }
 
-.header {
-  height: 5vh; }
-
 .nameTransition {
   z-index: 1;
   text-align: center;
-  position: fixed;
-  height: 110px;
   background: #ffffff;
   width: 100%;
   border-bottom: 2px solid #E82623; }
@@ -39,12 +34,12 @@ a {
   width: 45px; }
 
 #menu {
-  padding-top: 110px;
   font-size: 20px;
-  width: 100%;
+  width: 60%;
   float: right; }
 
 .menu__items {
+  transition: 2s;
   padding: 10px;
   width: 7%;
   height: 30px;
@@ -52,7 +47,9 @@ a {
   color: #E82623;
   cursor: pointer;
   position: relative; }
-  .menu__items:after {
+  .menu__items:hover:after {
+    transition: 4s;
+    z-index: 1;
     position: absolute;
     content: '';
     top: 30px;
@@ -60,12 +57,10 @@ a {
     width: 80%;
     background: #E82623;
     height: 5px;
-    z-index: -1; }
-  .menu__items:hover:after {
     color: #505657; }
 
 #projects {
-  margin-top: 40vh;
+  margin-top: 15vh;
   height: 100vh; }
 
 #projects > div {
@@ -103,7 +98,8 @@ a {
   background-image: url("../../images/linkedin-logo.png"); }
   .git_info:hover {
     background: #E82623;
-    color: #9EFFF6; }
+    color: #9EFFF6;
+    transition: 1.3s; }
     .git_info:hover a {
       color: #9EFFF6; }
 
@@ -153,6 +149,7 @@ form {
   width: 50%;
   height: 50px; }
   .button__form:hover {
+    transition: 0.70s;
     background: #E82623;
     color: #9EFFF6; }
 
@@ -177,6 +174,7 @@ form {
   width: 100%; }
 
 .menu__items--footer {
+  transition: 1s;
   display: inline-block;
   padding: 15px;
   margin: 10px;
@@ -185,6 +183,7 @@ form {
   color: #505657;
   cursor: pointer; }
   .menu__items--footer:after {
+    transition: 1s;
     position: absolute;
     content: '';
     top: 25px;

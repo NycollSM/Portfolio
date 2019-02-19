@@ -21,6 +21,7 @@
     
 }
 .menu__items--footer{
+    transition: 1s;
     display: inline-block;
     padding: 15px;
     margin: 10px;
@@ -29,6 +30,7 @@
     color: $global-color;
     cursor: pointer;
     &:after{
+        transition: 1s;
         position: absolute;
         content: '';
         top: 25px;

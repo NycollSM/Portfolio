@@ -1,11 +1,9 @@
-.header{
-    height: 5vh;    
-}
+//.header{
+  //  height: 5vh;    
+//}
 .nameTransition{
     z-index: 1;
     text-align: center;
-    position: fixed;
-    height: 110px;
     background: #ffffff;
     width: 100%;
     border-bottom: 2px solid $color-red;
@@ -16,12 +14,12 @@
     width: 45px;
 }
 #menu{
-    padding-top: 110px;
     font-size: 20px;
-    width: 100%;
+    width: 60%;
     float: right;
 }
 .menu__items{
+    transition: 2s;
     padding: 10px;
     width: 7%;
     height: 30px;
@@ -29,7 +27,9 @@
     color: $color-red;
     cursor: pointer;
     position: relative;
-    &:after{
+    &:hover:after{
+        transition: 4s;
+        z-index: 1;
         position: absolute;
         content: '';
         top: 30px;
@@ -37,9 +37,6 @@
         width: 80%;
         background: $color-red;
         height: 5px;
-        z-index: -1;
-    }
-    &:hover:after{
-    color: $global-color;
+        color: $global-color;
     }
 }

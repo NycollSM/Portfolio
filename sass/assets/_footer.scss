@@ -8,11 +8,14 @@
     height: 50px;
     width: 50px;
     padding: 10px;
-    display: block;
+    &:hover{
+        background: $global-color;    
+    }
 }
 #anchors > a > img{
     height: 50px;
     width: 50px;
+
 }
 #menufooter{
     background: $color-contrast;

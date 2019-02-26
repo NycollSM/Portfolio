@@ -7,9 +7,14 @@
     background: #ffffff;
     width: 100%;
     border-bottom: 2px solid $color-red;
+    position: fixed;
+    top: 0;
+}
+.name-header-transition , .career-header-transition{
+    font-family: $regular-font-family;
 }
 .logo{
-    padding: 5px;
+    padding: 3px;
     height: 45px;
     width: 45px;
 }
@@ -20,7 +25,7 @@
 }
 .menu__items{
     transition: 2s;
-    padding: 10px;
+    padding: 5px;
     width: 7%;
     height: 30px;
     float: right;
@@ -28,7 +33,6 @@
     cursor: pointer;
     position: relative;
     &:hover:after{
-        transition: 4s;
         z-index: 1;
         position: absolute;
         content: '';

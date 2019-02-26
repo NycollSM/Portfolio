@@ -6,6 +6,7 @@
     <title>NycollSM Portfolio</title>
     <link rel="shortcut icon" href="images/cherry.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Ovo" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
 </head>
 <body>     
@@ -14,31 +15,29 @@
         <p class="name-header-transition">Nycoll Soto M</p>
         <p class="career-header-transition">Front-End Developer</p>       
             <ul id="menu">
-                <li class="menu__items">Contact</li>
-                <li class="menu__items">About me</li>
-                <li class="menu__items">Github</li>
-                <li class="menu__items">Projects</li>
+                <li class="menu__items"><a href="#contact">Contact</a></li> 
+                <li class="menu__items"><a href="#about">About me</a> </li>
+                <li class="menu__items"><a href="#activityGithub">Github</a> </li>
+                <li class="menu__items"><a href="#projects">Projects</a> </li>
             </ul>
     </div>
 
 
     <div class="container">
-
         <div class="content">      
             <div id="projects">
                 <h2>Projects</h2>
-                <img src="" alt="">
-                <div>
-                    <img src="images/lyrics.png"  class="img-projects" alt="about project with json songs and lyrics requets">
-                    <p>This project is about songs that are saved from JSON file and I get lyrics at the same time</p>
+                <div class="projects--items">
+                    <img src="images/lyrics.png"  class="projects--img" alt="about project with json songs and lyrics requets">
+                    <p class="projects--text">This project is about songs that are saved from JSON file and I get lyrics at the same time</p>
                 </div>
-                <div>
-                    <img src="images/Cudaresponsive.png" alt="" class="img-projects">
-                    <p>I created this web page in class using responsive and good pranctices of HTML and CSS.</p>
+                <div class="projects--items">
+                    <img src="images/Cudaresponsive.png" alt="" class="projects--img">
+                    <p class="projects--text">I created this web page in class using responsive and good pranctices of HTML and CSS.</p>
                 </div>
-                <div> 
-                    <img src="images/responsive1.png" alt="" class="img-projects">
-                    <p>It is a web page using Sass and liquid elements to create responsive</p>
+                <div class="projects--items"> 
+                    <img src="images/responsive1.png" alt="" class="projects--img">
+                    <p class="projects--text">It is a web page using Sass and liquid elements to create responsive</p>
                 </div>
             </div>
             <div id="activityGithub">
@@ -78,8 +77,8 @@
             <a href="https://www.linkedin.com/in/nycoll-soto-morales-6b2430169/" target= '_black' class="links"><img src="images/linkedin-logo.png" alt=""></a>
             <a href="https://twitter.com/NycollSm" target= '_black' class="links"><img src="images/twitter-logo-silhouette.png" alt=""></a>
         </div> 
-            <ul id="menufooter">
-                <li class="menu__items--footer">nycollsotomorales@outlook.com</li>
+            <ul id="menufooter" >
+                <li id="contact" class="menu__items--footer">nycollsotomorales@outlook.com</li>
             <!--
                 <li class="menu__items--footer">Projects</li>
                 <li class="menu__items--footer"> Github</li>

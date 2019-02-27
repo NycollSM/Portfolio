@@ -1,32 +1,31 @@
 #projects{
-    margin-top: 40vh;
+    margin-top: 30vh;
     
 }
 .projects--items {
-    width: 50%;
-    height: 400px;
-    //display: block;
+    width: 30%;
+    margin-top: 20px;
+    height: 500px;
+    display: inline-block;
     font-size: 16px;
-    margin: 0 auto;
+    border: 1px solid #a3a3a3;
     
 }
 .projects--text {
-    padding: 15px;
+    padding: 10px;
     text-align: left;
 }
 // images 
 .projects--img{
-    height: 300px;
-    width: 80%;
+    margin-bottom: 10px;
+    height: 350px;
+    width: 100%;
     text-align: center;
-    &:hover{
-        background: #302f2f;
-    }
 }
 /*Github activity*/
 #activityGithub{
-    margin: 20vh 0;
-    height: 100vh;    
+    margin: 15vh 0;
+    height: 70vh;    
 
 }
 .git--items{ 
@@ -35,8 +34,8 @@
     padding: 2%;
     border-left: 3px solid $color-red;
     border-bottom: 1px solid $color-red;
-    margin: 10px;
-    height: 110px;
+    margin: 20px;
+    height: 90px;
     width: 20%;
     display: inline-block; 
     background-image: url("../../images/linkedin-logo.png");   
@@ -44,6 +43,7 @@
         background: $color-red;
         color: $color-contrast;
         transition: 1.3s; 
+        opacity: 0.8;
     a{
         color: $color-contrast;
     }

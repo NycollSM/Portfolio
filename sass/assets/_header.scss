@@ -14,6 +14,7 @@
     font-family: $regular-font-family;
 }
 .logo{
+    margin-top: 10px;
     padding: 3px;
     height: 45px;
     width: 45px;
@@ -26,8 +27,8 @@
 .menu__items{
     transition: 2s;
     padding: 5px;
-    width: 7%;
-    height: 30px;
+    width: 9%;
+
     float: right;
     color: $color-red;
     cursor: pointer;

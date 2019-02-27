@@ -8,6 +8,10 @@ h2 {
   text-align: justify;
   padding: 20px; }
 
+h3 {
+  font-weight: lighter;
+  font-family: "Muli", sans-serif; }
+
 li {
   list-style: none; }
 
@@ -20,7 +24,7 @@ a {
   color: #E82623; }
 
 .container {
-  width: 1200px;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
   color: #505657;
@@ -40,6 +44,7 @@ a {
   font-family: "Muli", sans-serif; }
 
 .logo {
+  margin-top: 10px;
   padding: 3px;
   height: 45px;
   width: 45px; }
@@ -52,8 +57,7 @@ a {
 .menu__items {
   transition: 2s;
   padding: 5px;
-  width: 7%;
-  height: 30px;
+  width: 9%;
   float: right;
   color: #E82623;
   cursor: pointer;
@@ -70,29 +74,30 @@ a {
     color: #505657; }
 
 #projects {
-  margin-top: 40vh; }
+  margin-top: 30vh; }
 
 .projects--items {
-  width: 50%;
-  height: 400px;
+  width: 30%;
+  margin-top: 20px;
+  height: 500px;
+  display: inline-block;
   font-size: 16px;
-  margin: 0 auto; }
+  border: 1px solid #a3a3a3; }
 
 .projects--text {
-  padding: 15px;
+  padding: 10px;
   text-align: left; }
 
 .projects--img {
-  height: 300px;
-  width: 80%;
+  margin-bottom: 10px;
+  height: 350px;
+  width: 100%;
   text-align: center; }
-  .projects--img:hover {
-    background: #302f2f; }
 
 /*Github activity*/
 #activityGithub {
-  margin: 20vh 0;
-  height: 100vh; }
+  margin: 15vh 0;
+  height: 70vh; }
 
 .git--items {
   text-align: initial;
@@ -100,15 +105,16 @@ a {
   padding: 2%;
   border-left: 3px solid #E82623;
   border-bottom: 1px solid #E82623;
-  margin: 10px;
-  height: 110px;
+  margin: 20px;
+  height: 90px;
   width: 20%;
   display: inline-block;
   background-image: url("../../images/linkedin-logo.png"); }
   .git--items:hover {
     background: #E82623;
     color: #9EFFF6;
-    transition: 1.3s; }
+    transition: 1.3s;
+    opacity: 0.8; }
     .git--items:hover a {
       color: #9EFFF6; }
 

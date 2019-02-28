@@ -1,7 +1,7 @@
 (function (){
 //github activity
 function fetchJson() {
-    const div = document.getElementById('activityGithub');
+    const div = document.getElementById('github');
     fetch('https://api.github.com/users/nycollsm/events/public')
         .then (response => response.json())
         .then(data => {

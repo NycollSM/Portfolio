@@ -1,6 +1,5 @@
-#projects{
+.projects--container{
     margin-top: 30vh;
-    
 }
 .projects--items {
     width: 30%;
@@ -9,7 +8,6 @@
     display: inline-block;
     font-size: 16px;
     border: 1px solid #a3a3a3;
-    
 }
 .projects--text {
     padding: 10px;
@@ -23,10 +21,8 @@
     text-align: center;
 }
 /*Github activity*/
-#activityGithub{
-    margin: 15vh 0;
-    height: 70vh;    
-
+#github{
+    margin: 10vh 0;
 }
 .git--items{ 
     text-align: initial;

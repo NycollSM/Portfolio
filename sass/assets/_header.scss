@@ -12,17 +12,21 @@
 }
 .name-header-transition , .career-header-transition{
     font-family: $regular-font-family;
+    padding: 2px;
+    display: block;
 }
 .logo{
     margin-top: 10px;
     padding: 3px;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
 }
 #menu{
     font-size: 20px;
     width: 60%;
     float: right;
+    top: 0;
 }
 .menu__items{
     transition: 2s;

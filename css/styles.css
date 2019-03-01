@@ -42,25 +42,21 @@ a {
 
 .name-header-transition, .career-header-transition {
   font-family: "Muli", sans-serif;
-  padding: 2px;
-  display: block; }
+  padding: 2px; }
 
 .logo {
   margin-top: 10px;
-  padding: 3px;
   height: 40px;
-  width: 40px;
-  display: inline-block; }
+  width: 40px; }
 
 #menu {
-  font-size: 20px;
+  font-size: 16px;
   width: 60%;
   float: right;
-  top: 0; }
+  padding: 0; }
 
 .menu__items {
-  transition: 2s;
-  padding: 5px;
+  padding-right: 5px;
   width: 9%;
   float: right;
   color: #E82623;
@@ -70,12 +66,11 @@ a {
     z-index: 1;
     position: absolute;
     content: '';
-    top: 30px;
+    top: 20px;
     display: block;
-    width: 80%;
-    background: #E82623;
-    height: 5px;
-    color: #505657; }
+    width: 100%;
+    background: #9EFFF6;
+    height: 5px; }
 
 .projects--container {
   margin-top: 30vh; }

@@ -33,32 +33,34 @@ a {
 
 .nameTransition {
   z-index: 1;
-  text-align: center;
+  padding: 10px;
   background: #ffffff;
   width: 100%;
-  border-bottom: 2px solid #E82623;
+  border-bottom: 1px solid #E82623;
   position: fixed;
-  top: 0; }
+  top: 0;
+  text-align: center; }
 
 .name-header-transition, .career-header-transition {
   font-family: "Muli", sans-serif;
   padding: 2px; }
 
 .logo {
-  margin-top: 10px;
-  height: 40px;
-  width: 40px; }
+  margin-top: 5px;
+  height: 20px;
+  width: 20px; }
 
 #menu {
   font-size: 16px;
   width: 60%;
   float: right;
-  padding: 0; }
+  text-align: right;
+  top: 50%;
+  padding: 0 1%; }
 
 .menu__items {
-  padding-right: 5px;
   width: 9%;
-  float: right;
+  display: inline-block;
   color: #E82623;
   cursor: pointer;
   position: relative; }
@@ -73,10 +75,10 @@ a {
     height: 5px; }
 
 .projects--container {
-  margin-top: 30vh; }
+  margin-top: 40vh; }
 
 .projects--items {
-  width: 30%;
+  width: 40%;
   margin-top: 20px;
   height: 500px;
   display: inline-block;
@@ -89,7 +91,7 @@ a {
 
 .projects--img {
   margin-bottom: 10px;
-  height: 350px;
+  height: 300px;
   width: 100%;
   text-align: center; }
 

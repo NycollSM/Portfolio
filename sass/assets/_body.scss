@@ -1,24 +1,37 @@
-.projects--container{
-    margin-top: 40vh;
+.works--container{
+    height: 100%;
+    margin-top: 10%;
 }
-.projects--items {
-    width: 40%;
+.works--items{
+    width: 70%;
+    //height: 250px;
+    padding: 2%;
+    margin: 0 auto;
     margin-top: 20px;
-    height: 500px;
-    display: inline-block;
+    display: block;
     font-size: 16px;
-    border: 1px solid #a3a3a3;
+    border-bottom: 1px solid #a3a3a3;
 }
-.projects--text {
+.works--text {
     padding: 10px;
+    //width: 70%;
     text-align: left;
+    display: inline-block;
+    
 }
 // images 
-.projects--img{
+.works--img{
     margin-bottom: 10px;
     height: 300px;
     width: 100%;
     text-align: center;
+
+}
+.works--links img{
+    height: 30px;
+    padding: 10px;
+    width: 30px;
+    display: inline-block;
 }
 /*Github activity*/
 #github{

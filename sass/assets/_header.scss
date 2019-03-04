@@ -10,7 +10,6 @@
 }
 .name-header-transition , .career-header-transition{
     font-family: $regular-font-family;
-    padding: 2px; 
 }
 .logo{
     margin-top: 5px;
@@ -24,14 +23,15 @@
     text-align: right;
     top: 50%;
     padding: 0 1%;
+    display: inline-block;
 }
 .menu__items{
-    //padding-right: 5px;
-    width: 9%;
+    width: 10%;
     display: inline-block;
     color: $color-red;
     cursor: pointer;
     position: relative;
+    text-align: center;
     &:hover:after{
         z-index: 1;
         position: absolute;

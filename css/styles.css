@@ -42,8 +42,7 @@ a {
   text-align: center; }
 
 .name-header-transition, .career-header-transition {
-  font-family: "Muli", sans-serif;
-  padding: 2px; }
+  font-family: "Muli", sans-serif; }
 
 .logo {
   margin-top: 5px;
@@ -56,14 +55,16 @@ a {
   float: right;
   text-align: right;
   top: 50%;
-  padding: 0 1%; }
+  padding: 0 1%;
+  display: inline-block; }
 
 .menu__items {
-  width: 9%;
+  width: 10%;
   display: inline-block;
   color: #E82623;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .menu__items:hover:after {
     z-index: 1;
     position: absolute;
@@ -74,26 +75,35 @@ a {
     background: #9EFFF6;
     height: 5px; }
 
-.projects--container {
-  margin-top: 40vh; }
+.works--container {
+  height: 100%;
+  margin-top: 10%; }
 
-.projects--items {
-  width: 40%;
+.works--items {
+  width: 70%;
+  padding: 2%;
+  margin: 0 auto;
   margin-top: 20px;
-  height: 500px;
-  display: inline-block;
+  display: block;
   font-size: 16px;
-  border: 1px solid #a3a3a3; }
+  border-bottom: 1px solid #a3a3a3; }
 
-.projects--text {
+.works--text {
   padding: 10px;
-  text-align: left; }
+  text-align: left;
+  display: inline-block; }
 
-.projects--img {
+.works--img {
   margin-bottom: 10px;
   height: 300px;
   width: 100%;
   text-align: center; }
+
+.works--links img {
+  height: 30px;
+  padding: 10px;
+  width: 30px;
+  display: inline-block; }
 
 /*Github activity*/
 #github {

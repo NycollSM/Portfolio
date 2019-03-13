@@ -1,8 +1,10 @@
 .nameTransition{
     z-index: 1;
     padding: 5px;
-    background: #ffffff;
+    background: #E82623;
+    opacity: 0.9;
     width: 100%;
+    color: white;
     border-bottom: 1px solid $color-red;
     position: fixed;
     top: 0;
@@ -10,6 +12,12 @@
 }
 .name-header-transition , .career-header-transition{
     font-family: $regular-font-family;
+}
+.career-header-transition{
+    font-size: 18px;
+    padding: 3px;
+    font-weight: bold;
+    letter-spacing: 5px;
 }
 .logo{
     margin-top: 5px;
@@ -24,9 +32,10 @@
     display: inline-block;
 }
 .menu__items{
+    z-index: 1;
     width: 10%;
+    padding-bottom: 5px;
     display: inline-block;
-    color: $color-red;
     cursor: pointer;
     position: relative;
     text-align: center;
@@ -40,4 +49,7 @@
         background: $color-contrast;
         height: 5px;
     }
+}
+.menu__items a {
+    color: white;
 }

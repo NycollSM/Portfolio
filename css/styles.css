@@ -11,7 +11,8 @@ h2 {
 h3 {
   font-weight: lighter;
   font-family: "Muli", sans-serif;
-  padding: 5%; }
+  padding: 5%;
+  text-align: left; }
 
 li {
   list-style: none; }
@@ -35,8 +36,10 @@ a {
 .nameTransition {
   z-index: 1;
   padding: 5px;
-  background: #ffffff;
+  background: #E82623;
+  opacity: 0.9;
   width: 100%;
+  color: white;
   border-bottom: 1px solid #E82623;
   position: fixed;
   top: 0;
@@ -44,6 +47,12 @@ a {
 
 .name-header-transition, .career-header-transition {
   font-family: "Muli", sans-serif; }
+
+.career-header-transition {
+  font-size: 18px;
+  padding: 3px;
+  font-weight: bold;
+  letter-spacing: 5px; }
 
 .logo {
   margin-top: 5px;
@@ -58,9 +67,10 @@ a {
   display: inline-block; }
 
 .menu__items {
+  z-index: 1;
   width: 10%;
+  padding-bottom: 5px;
   display: inline-block;
-  color: #E82623;
   cursor: pointer;
   position: relative;
   text-align: center; }
@@ -71,39 +81,44 @@ a {
     top: 20px;
     display: block;
     width: 100%;
-    background: #9EFFF6;
+    background: #98e0d9;
     height: 5px; }
+
+.menu__items a {
+  color: white; }
 
 .works--container {
   margin-top: 30vh; }
 
 .works--items {
-  width: 70%;
   padding: 2%;
-  margin: 0 auto;
   margin-top: 20px;
   display: block;
   font-size: 16px;
   border-bottom: 1px solid #a3a3a3; }
 
 .works--text {
-  padding: 10px;
+  height: 100%;
   display: inline-block;
   text-align: left;
-  float: right;
-  width: 50%; }
+  width: 50%;
+  float: right; }
 
 .works--img {
   margin-bottom: 10px;
   height: 300px;
-  width: 40%;
-  text-align: center; }
+  width: 500px; }
 
 .works--links img {
   height: 30px;
   padding: 10px;
   width: 30px;
-  display: inline-block; }
+  display: inline-block;
+  background-image: url(../../images/github.png); }
+
+.page--link {
+  background-image: url(../../images/external-link-symbol.png);
+  background-repeat: no-repeat; }
 
 /*Github activity*/
 #github {
@@ -121,11 +136,11 @@ a {
   display: inline-block; }
   .git--items:hover {
     background: #E82623;
-    color: #9EFFF6;
+    color: #98e0d9;
     transition: 1.3s;
     opacity: 0.8; }
     .git--items:hover a {
-      color: #9EFFF6; }
+      color: #98e0d9; }
 
 .git--items > p {
   padding: 3px; }
@@ -185,7 +200,7 @@ form{
   width: 100%; }
 
 .links {
-  background: #9EFFF6;
+  background: #98e0d9;
   height: 50px;
   width: 50px;
   padding: 10px; }
@@ -197,7 +212,7 @@ form{
   width: 50px; }
 
 #menufooter {
-  background: #9EFFF6;
+  background: #98e0d9;
   margin: 0 auto;
   width: 100%; }
 

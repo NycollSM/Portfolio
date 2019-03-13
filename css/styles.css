@@ -36,8 +36,7 @@ a {
 .nameTransition {
   z-index: 1;
   padding: 5px;
-  background: #E82623;
-  opacity: 0.9;
+  background: #d80b08;
   width: 100%;
   color: white;
   border-bottom: 1px solid #E82623;
@@ -55,9 +54,11 @@ a {
   letter-spacing: 5px; }
 
 .logo {
-  margin-top: 5px;
-  height: 20px;
-  width: 20px; }
+  background: #ffffff;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 45%; }
 
 #menu {
   width: 60%;

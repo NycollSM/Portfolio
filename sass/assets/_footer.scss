@@ -9,7 +9,8 @@
     width: 50px;
     padding: 10px;
     &:hover{
-        background: $global-color;    
+        background: $global-color; 
+        transition: 1s;   
     }
 }
 #anchors > a > img{
@@ -17,7 +18,8 @@
     width: 50px;
 
 }
-#menufooter{
+#footer{
+    padding: 25px 0 30px; 
     background: $color-contrast;
     margin: 0 auto;
     width: 100%;

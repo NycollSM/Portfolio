@@ -1,36 +1,34 @@
 * {
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-family: "Muli", sans-serif; }
 
 h2 {
-  font-family: "Ovo", serif;
-  text-align: justify;
-  padding: 20px; }
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 10px;
+  margin-bottom: 100px; }
 
 h3 {
   font-weight: lighter;
-  font-family: "Muli", sans-serif;
   padding: 5%;
-  text-align: left; }
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 10px; }
 
 li {
   list-style: none; }
 
-p {
-  font-family: "Muli", sans-serif; }
-
 a {
-  font-family: "Muli", sans-serif;
   text-decoration: none;
   color: #E82623; }
 
 .container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   color: #505657;
-  padding: 0 2%;
   font-size: 18px; }
 
 .nameTransition {
@@ -89,33 +87,35 @@ a {
   color: white; }
 
 .works--container {
-  margin-top: 30vh; }
+  margin: 0 auto;
+  margin-top: 30vh;
+  width: 80%; }
 
-.works--items {
+.work--items {
   padding: 2%;
   margin-top: 20px;
-  display: block;
+  display: inline-block;
   font-size: 16px;
-  border-bottom: 1px solid #a3a3a3; }
+  width: 45%;
+  text-align: center; }
 
 .works--text {
-  height: 100%;
-  display: inline-block;
-  text-align: left;
-  width: 50%;
-  float: right; }
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 500px; }
 
-.works--img {
+.work--img {
+  position: relative;
   margin-bottom: 10px;
   height: 300px;
   width: 500px; }
 
-.works--links img {
+.work--links img {
+  position: absolute;
   height: 30px;
   padding: 10px;
   width: 30px;
-  display: inline-block;
-  background-image: url(../../images/github.png); }
+  display: inline-block; }
 
 .page--link {
   background-image: url(../../images/external-link-symbol.png);
@@ -123,11 +123,14 @@ a {
 
 /*Github activity*/
 #github {
-  margin: 10vh 0; }
+  margin: 0 auto;
+  margin: 10vh 0;
+  padding: 40px 0;
+  background: #eeeeee; }
 
 .git--items {
   text-align: initial;
-  background: #eeeeee;
+  background: #ffffff;
   padding: 2%;
   border-left: 3px solid #E82623;
   border-bottom: 1px solid #E82623;
@@ -148,14 +151,20 @@ a {
 
 /*about*/
 #about {
-  height: 90vh; }
+  height: 80vh;
+  width: 80%;
+  margin: 0 auto; }
 
 .photo-about {
-  margin: 20vh 0;
   height: 300px;
   width: 300px;
   border-radius: 100%;
   margin-bottom: 20px; }
+
+.about--text {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 30px; }
 
 /*form*/
 /*
@@ -206,13 +215,15 @@ form{
   width: 50px;
   padding: 10px; }
   .links:hover {
-    background: #505657; }
+    background: #505657;
+    transition: 1s; }
 
 #anchors > a > img {
   height: 50px;
   width: 50px; }
 
-#menufooter {
+#footer {
+  padding: 25px 0 30px;
   background: #98e0d9;
   margin: 0 auto;
   width: 100%; }

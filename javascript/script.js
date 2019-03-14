@@ -5,14 +5,14 @@ function fetchJson() {
     fetch('https://api.github.com/users/nycollsm/events/public')
         .then (response => response.json())
         .then(data => {
-          const items = data.slice(0,12);
+          let items = data.slice(0,12);
           console.log(data);
           for (const repositories of items){
             const divInfo = document.createElement('div');
             divInfo.setAttribute('class', 'git--items');
             const repoName = document.createElement('p');
             repoName.innerText = 'Repository' + ' ' + repositories.repo.name;
-           // const commit = document.createElement('p');
+            // const commit = document.createElement('p');
             //commit.innerText = 'Commit:' + ' ' +repositories.payload.commits[0].message;
             const url = document.createElement('a');
             url.setAttribute('href', repositories.repo.url);
@@ -21,7 +21,7 @@ function fetchJson() {
             const date = document.createElement('p');
             date.innerText = repositories.created_at;
             divInfo.appendChild(repoName);
-             // divInfo.appendChild(commit);
+            // divInfo.appendChild(commit);
             divInfo.appendChild(date);
             div.appendChild(divInfo);
             divInfo.appendChild(url);

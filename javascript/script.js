@@ -1,18 +1,18 @@
 (function (){
 //github activity
-function fetchJson() {
-    const div = document.getElementById('github');
+  const div = document.getElementById('github');
+  const divInfo = document.createElement('div');
+  function fetchJson() {  
     fetch('https://api.github.com/users/nycollsm/events/public')
         .then (response => response.json())
         .then(data => {
           let items = data.slice(0,12);
           console.log(data);
           for (const repositories of items){
-            const divInfo = document.createElement('div');
             divInfo.setAttribute('class', 'git--items');
             const repoName = document.createElement('p');
             repoName.innerText = 'Repository' + ' ' + repositories.repo.name;
-            // const commit = document.createElement('p');
+            //const commit = document.createElement('p');
             //commit.innerText = 'Commit:' + ' ' +repositories.payload.commits[0].message;
             const url = document.createElement('a');
             url.setAttribute('href', repositories.repo.url);
@@ -26,18 +26,25 @@ function fetchJson() {
             div.appendChild(divInfo);
             divInfo.appendChild(url);
             div.appendChild(divInfo);
-            for(commit in repositories.payload) {
-              // /console.log(commit);
-              for ( e of commit){
-                commit.innerText = e;
-                console.log(commit.commits);
-              }
+            
       
             } 
           }
         })
     
 } fetchJson();
+
+function commitResponse(){
+  fetch('https://api.github.com/users/nycollsm/events/public')
+  .then(commit_response => commit_response.json())
+  .then(commit_data => {
+    let commits = commit_data.slice(0,12);
+    console.log(commits);
+    for(const commits_info in commits.payload) {
+        console.log(commits_info);
+  })
+
+}commitResponse();
 
 //form validation 
 /**

@@ -24,17 +24,15 @@
     width: 500px;
 }
 
-.work--links img{
-    position: absolute;
-    height: 30px;
-    padding: 10px;
-    width: 30px;
-    display: inline-block;
-}
-.page--link{
-    background-image: url(../../images/external-link-symbol.png);
+.work--links{
+    background-image: url(../images/github.png);
     background-repeat: no-repeat;
+    /*border: 2px solid red;
+    height: 62px;
+    width: 62px;
+    // display: inline-block; */
 }
+
 /*Github activity*/
 #github{
     margin: 0 auto;

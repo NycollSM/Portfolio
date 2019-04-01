@@ -39,23 +39,43 @@
     
 } fetchJson();
 
-function commitResponse(){
-  fetch('https://api.github.com/users/nycollsm/events/public')
-  .then(commit_response => commit_response.json())
-  .then(commit_data => {
-    let reposCommits = commit_data.slice(0,12);
-    //console.log(commits);
-    for(const commits_info of reposCommits) {
-        const newCommit = commits_info.payload.commits;
-        for (const commitInfo in newCommit){
-          for (messageCommit in commitInfo){
-            console.log(messageCommit.message);
+  function commitResponse(){
+    fetch('https://api.github.com/users/nycollsm/events/public')
+    .then(commit_response => commit_response.json())
+    .then(commit_data => {
+      let reposCommits = commit_data.slice(0,12);
+      //console.log(commits);
+      for(const commits_info of reposCommits) {
+          const newCommit = commits_info.payload.commits;
+          for (const commitInfo in newCommit){
+            for (messageCommit in commitInfo){
+              console.log(messageCommit.message);
+            }
           }
-        }
-    }
-  })
+      }
+    })
 
-}commitResponse();
+  }commitResponse();
+
+  function hearderAnimation (){
+    const headerContainer = document.getElementById('headername');
+    const headerName = document.getElementById('name');
+    window.addEventListener("scroll", function (event) {
+      var scroll = this.pageYOffset ;
+      if (scroll != 0){
+        headerName.style.opacity = '0';
+        headerName.style.transition = '1s';
+      } else {
+        headerName.style.opacity = '1';
+        headerName.style.transition = '1s';
+        console.log(scroll);
+      }
+    });
+  } hearderAnimation();  
+  
+  
+    
+
 
 
 }());

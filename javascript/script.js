@@ -1,35 +1,40 @@
 (function (){
 //github activity
-  const div = document.getElementById('github');
-  const divInfo = document.createElement('div');
+  let container = document.getElementById('github'); 
+  let divInfo;
   function fetchJson() {  
     fetch('https://api.github.com/users/nycollsm/events/public')
         .then (response => response.json())
-        .then(data => {
-          let items = data.slice(0,12);
-          console.log(data);
-          for (const repositories of items){
-            divInfo.setAttribute('class', 'git--items');
-            const repoName = document.createElement('p');
-            repoName.innerText = 'Repository' + ' ' + repositories.repo.name;
-            //const commit = document.createElement('p');
-            //commit.innerText = 'Commit:' + ' ' +repositories.payload.commits[0].message;
-            const url = document.createElement('a');
-            url.setAttribute('href', repositories.repo.url);
-            url.innerText = 'url';
-            console.log(repositories.repo.url);
-            const date = document.createElement('p');
-            date.innerText = repositories.created_at;
-            divInfo.appendChild(repoName);
-            // divInfo.appendChild(commit);
-            divInfo.appendChild(date);
-            div.appendChild(divInfo);
-            divInfo.appendChild(url);
-            div.appendChild(divInfo);
-            
-      
-            } 
-          }
+          .then(data => {
+            let items = data.slice(0,12);
+            for (const repositories of items){
+              divInfo = document.createElement('div');
+              divInfo.setAttribute('class', 'git--items');
+              const repoName = document.createElement('p');
+              repoName.innerText = 'Repository' + ' ' + repositories.repo.name;
+              const url = document.createElement('a');
+              url.setAttribute('href', repositories.repo.url.html_url);
+              url.innerText = 'url';
+              const date = document.createElement('p');
+              date.innerText = repositories.created_at;
+              divInfo.appendChild(repoName);
+              // const commit = repositories.payload.commits[0].message;
+              // console.log(commit);
+              divInfo.appendChild(date);
+             // div.appendChild(divInfo);
+              divInfo.appendChild(url);
+              container.appendChild(divInfo);
+            }
+        })
+        .catch (function() {
+          console.log("error");
+          const errorTxt = document.createElement('p');
+          errorTxt.innerText = "This section is not workin but you can see my activity in my" + ' ';
+          const link = document.createElement('a');
+          link.innerText = 'Repository';
+          link.setAttribute('href', 'https://github.com/NycollSM');
+          errorTxt.appendChild(link);
+          container.appendChild(errorTxt);
         })
     
 } fetchJson();
@@ -38,13 +43,23 @@ function commitResponse(){
   fetch('https://api.github.com/users/nycollsm/events/public')
   .then(commit_response => commit_response.json())
   .then(commit_data => {
-    let commits = commit_data.slice(0,12);
-    console.log(commits);
-    for(const commits_info in commits.payload) {
-        console.log(commits_info);
+    let reposCommits = commit_data.slice(0,12);
+    //console.log(commits);
+    for(const commits_info of reposCommits) {
+        const newCommit = commits_info.payload.commits;
+        for (const commitInfo in newCommit){
+          for (messageCommit in commitInfo){
+            console.log(messageCommit.message);
+          }
+        }
+    }
   })
 
 }commitResponse();
+
+
+}());
+
 
 //form validation 
 /**
@@ -66,4 +81,3 @@ function commitResponse(){
   button.addEventListener('click', prueba);
 }FormValidation();
 */
-}());

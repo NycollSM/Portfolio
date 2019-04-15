@@ -1,7 +1,6 @@
 .footer{
     text-align: center;
     width: 100%;
-    height: 400px;
 }
 
 .links{
@@ -11,7 +10,7 @@
     width: 50px;
     padding: 10px;
     &:hover{
-        background: $global-color; 
+        background: $global-color;
         transition: 1s;   
     }
 }

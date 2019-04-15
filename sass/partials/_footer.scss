@@ -7,6 +7,7 @@
 .links{
     background: $color-contrast;
     height: 50px;
+    border-radius: 4px;
     width: 50px;
     padding: 10px;
     &:hover{
@@ -24,7 +25,6 @@
     background: $color-contrast;
     margin: 0 auto;
     width: 100%; 
-    padding: 50px;
     
 }
 .contact{  

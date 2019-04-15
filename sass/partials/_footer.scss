@@ -1,0 +1,50 @@
+.footer{
+    text-align: center;
+    width: 100%;
+    height: 400px;
+}
+
+.links{
+    background: $color-contrast;
+    height: 50px;
+    border-radius: 4px;
+    width: 50px;
+    padding: 10px;
+    &:hover{
+        background: $global-color; 
+        transition: 1s;   
+    }
+}
+#anchors > a > img{
+    height: 50px;
+    width: 50px;
+
+}
+.link--footer{
+    padding: 25px 0 30px; 
+    background: $color-contrast;
+    margin: 0 auto;
+    width: 100%; 
+    
+}
+.contact{  
+    padding: 15px;
+    font-size: 18px;
+    color: $global-color;
+    cursor: pointer;
+    &:after{
+        transition: 1s;
+        position: absolute;
+        content: '';
+        top: 25px;
+        display: block;
+        width: 100%;
+        background: $color-red;
+        height: 5px;
+        z-index: -1;
+    }
+    &:hover:after{
+    z-index: 1;
+    color: $global-color;
+    }
+}

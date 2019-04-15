@@ -1,0 +1,56 @@
+.nameTransition{
+    z-index: 1;
+    padding: 5px;
+    background: #d80b08;
+    width: 100%;
+    color: white;
+    border-bottom: 1px solid $color-red;
+    position: fixed;
+    top: 0;
+    text-align: center;
+}
+.name-header-transition , .career-header-transition{
+    font-family: $regular-font-family;
+}
+.career-header-transition{
+    font-size: 18px;
+    padding: 3px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.logo{
+    background: #ffffff;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 45%;
+}
+#menu{
+    width: 60%;
+    float: right;
+    text-align: right;
+    padding: 0 1%;
+    display: inline-block;
+}
+.menu__items{
+    z-index: 1;
+    width: 10%;
+    padding-bottom: 5px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    &:hover:after{
+        z-index: 1;
+        position: absolute;
+        content: '';
+        top: 20px;
+        display: block;
+        width: 100%;
+        background: $color-contrast;
+        height: 5px;
+    }
+}
+.menu__items a {
+    color: white;
+}

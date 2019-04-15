@@ -107,6 +107,7 @@ a {
 }
 
 .work--items {
+  box-sizing: border-box;
   padding: 2%;
   margin-top: 20px;
   display: inline-block;
@@ -122,19 +123,11 @@ a {
 }
 
 .work--img {
+  box-sizing: border-box;
   position: relative;
   margin-bottom: 10px;
   height: 300px;
   width: 500px;
-}
-
-.work--links {
-  background-image: url(../images/github.png);
-  background-repeat: no-repeat;
-  /*border: 2px solid red;
-  height: 62px;
-  width: 62px;
-  // display: inline-block; */
 }
 
 /*Github activity*/

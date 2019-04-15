@@ -4,6 +4,7 @@
     width: 80%;
 }
 .work--items{
+    box-sizing: border-box;
     padding: 2%;
     margin-top: 20px;
     display: inline-block;
@@ -18,19 +19,11 @@
 }
 // images 
 .work--img{
+    box-sizing: border-box;
     position: relative;
     margin-bottom: 10px;
     height: 300px;
     width: 500px;
-}
-
-.work--links{
-    background-image: url(../images/github.png);
-    background-repeat: no-repeat;
-    /*border: 2px solid red;
-    height: 62px;
-    width: 62px;
-    // display: inline-block; */
 }
 
 /*Github activity*/
@@ -56,9 +49,9 @@
         color: $color-contrast;
         transition: 1.3s; 
         opacity: 0.8;
-    a{
-        color: $color-contrast;
-    }
+        a{
+            color: $color-contrast;
+        }
     }
 }
 .git--items > p {

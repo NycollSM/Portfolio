@@ -6,7 +6,7 @@
     fetch('https://api.github.com/users/nycollsm/events/public')
         .then (response => response.json())
           .then(data => {
-            let items = data.slice(0,12);
+            let items = data.slice(0, 3);
             for (const repositories of items){
               divInfo = document.createElement('div');
               divInfo.setAttribute('class', 'git--items');
@@ -62,7 +62,7 @@
     const headerName = document.getElementById('name');
     window.addEventListener("scroll", function (event) {
       var scroll = this.pageYOffset ;
-      if (scroll != 0){
+      if (scroll !== 0){
         headerName.style.opacity = '0';
         headerName.style.transition = '1s';
       } else {
@@ -71,33 +71,11 @@
         console.log(scroll);
       }
     });
-  } hearderAnimation();  
-  
+  }  
+ document.addEventListener('scroll', hearderAnimation);
   
     
 
 
 
 }());
-
-
-//form validation 
-/**
- * 
-  function FormValidation() {
-  //\s?\D?
-  const emailExpression = /"[a-z]+[@]+[a-z]"/gm;
-  const nameExpression = /"[a-z]+"/gm;
-  const test = document.getElementsByTagName('input');
-  function prueba (){
-    if (test[0] == nameExpression ){
-      alert('jxbsbsj'); //test[1] == emailExpression
-    }else{
-      alert('asdfghjkljhgfdsasdfghj');
-    }
-    
-  }
-  const button = document.getElementById('send-form');
-  button.addEventListener('click', prueba);
-}FormValidation();
-*/

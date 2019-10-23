@@ -2,38 +2,44 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: "Muli", sans-serif; }
+  font-family: "Muli", sans-serif;
+}
 
 h2 {
   text-align: center;
   font-size: 45px;
-  padding: 65px 0;
+  padding: 29px 0;
   letter-spacing: 10px;
-<<<<<<< HEAD
 }
-=======
-  margin-bottom: 100px; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 h3 {
   font-weight: lighter;
   padding: 5%;
   text-align: center;
   font-size: 22px;
-  letter-spacing: 10px; }
+  letter-spacing: 10px;
+}
+
+ul {
+  width: 250px;
+  margin: 20px 28px;
+  text-align: center;
+}
 
 li {
-  list-style: none; }
+  padding: 4px;
+  list-style-image: url(../../images/cherries.png);
+}
 
 a {
   text-decoration: none;
-  color: #E82623; }
+  color: #E82623;
+}
 
 .container {
   width: 100%;
   margin: 0 auto;
   color: #505657;
-<<<<<<< HEAD
   font-size: 18px;
 }
 @media (min-width: 980px) {
@@ -46,9 +52,6 @@ h6 {
   margin: 0 auto;
   padding: 2px;
 }
-=======
-  font-size: 18px; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 .nameTransition {
   z-index: 1;
@@ -59,26 +62,29 @@ h6 {
   border-bottom: 1px solid #E82623;
   position: fixed;
   top: 0;
-  text-align: center; }
+  text-align: center;
+}
 
 .name-header-transition, .career-header-transition {
-  font-family: "Muli", sans-serif; }
+  font-family: "Muli", sans-serif;
+}
 
 .career-header-transition {
   font-size: 18px;
   padding: 3px;
   font-weight: bold;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+}
 
 .logo {
   background: #ffffff;
   padding: 10px;
   height: 30px;
   width: 30px;
-  border-radius: 45%; }
+  border-radius: 45%;
+}
 
 #menu {
-<<<<<<< HEAD
   display: inline-block;
   margin: 0 auto;
   padding: 10px 1%;
@@ -90,13 +96,6 @@ h6 {
     float: right;
   }
 }
-=======
-  width: 60%;
-  float: right;
-  text-align: right;
-  padding: 0 1%;
-  display: inline-block; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 .menu__items {
   z-index: 1;
@@ -104,7 +103,6 @@ h6 {
   display: inline-block;
   cursor: pointer;
   position: relative;
-<<<<<<< HEAD
   text-align: center;
 }
 .menu__items:hover:after {
@@ -122,25 +120,13 @@ h6 {
     padding: 10px;
   }
 }
-=======
-  text-align: center; }
-  .menu__items:hover:after {
-    z-index: 1;
-    position: absolute;
-    content: '';
-    top: 20px;
-    display: block;
-    width: 100%;
-    background: #98e0d9;
-    height: 5px; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 .menu__items a {
-  color: white; }
+  color: white;
+}
 
 .works--container {
   margin: 0 auto;
-<<<<<<< HEAD
   padding: 2%;
   margin-top: 16vh;
   text-align: center;
@@ -157,19 +143,6 @@ h6 {
   display: flex;
   text-align: center;
 }
-=======
-  margin-top: 30vh;
-  width: 80%; }
-
-.work--items {
-  box-sizing: border-box;
-  padding: 2%;
-  margin-top: 20px;
-  display: inline-block;
-  font-size: 16px;
-  width: 45%;
-  text-align: center; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 .works--wrapper__size1 {
   position: relative;
@@ -179,7 +152,6 @@ h6 {
   background-position: center;
   display: inline-block;
   margin: 0 auto;
-<<<<<<< HEAD
   height: 335px;
   width: 350px;
   text-align: center;
@@ -200,10 +172,6 @@ h6 {
     margin: 30px;
   }
 }
-=======
-  padding: 0 10px;
-  width: 500px; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 .works--wrapper__size1 a {
   bottom: 0;
@@ -222,7 +190,6 @@ h6 {
   display: inline-block;
   width: 220px;
   height: 300px;
-<<<<<<< HEAD
   padding: 30px;
   margin: 30px;
   overflow: hidden;
@@ -270,21 +237,14 @@ h6 {
   top: 65%;
   left: 0%;
 }
-=======
-  width: 500px; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 /*Github activity*/
 #github {
   margin: 0 auto;
   padding: 40px 0;
-<<<<<<< HEAD
   background: #eeeeee;
   text-align: center;
 }
-=======
-  background: #eeeeee; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 .git--items {
   text-align: initial;
@@ -293,8 +253,9 @@ h6 {
   border-left: 3px solid #E82623;
   border-bottom: 1px solid #E82623;
   margin: 20px;
-<<<<<<< HEAD
   height: 100px;
+  border-radius: 4px;
+  width: 20%;
   display: inline-block;
 }
 .git--items:hover {
@@ -306,42 +267,31 @@ h6 {
 .git--items:hover a {
   color: #98e0d9;
 }
-=======
-  border-radius: 4px;
-  height: 90px;
-  width: 20%;
-  display: inline-block; }
-  .git--items:hover {
-    background: #E82623;
-    color: #98e0d9;
-    transition: 1.3s;
-    opacity: 0.8; }
-    .git--items:hover a {
-      color: #98e0d9; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 .git--items > p {
-  padding: 3px; }
+  padding: 3px;
+}
 
 @media (min-width: 768px) {
   .skills {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     text-align: center;
     padding: 70px 0;
   }
 }
 
+.wrapper-skills {
+  display: flex;
+}
+
 .wrapper-tech {
+  border: 1px solid #98e0d9;
   text-align: center;
   margin: 0 auto;
   padding: 20px;
-  height: 200px;
+  height: 230px;
   width: 280px;
-  background: url(../../images/cherry1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 @media (min-width: 768px) {
   .wrapper-tech {
@@ -354,8 +304,8 @@ h6 {
 }
 
 .wrapper-design {
-  height: 200px;
-  background: url(../../images/cherry2.jpg);
+  border: 1px solid #98e0d9;
+  height: 230px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -375,14 +325,12 @@ h6 {
 }
 
 .wrapper-soft {
-  height: 200px;
+  border: 1px solid #98e0d9;
+  height: 230px;
   width: 280px;
   text-align: center;
   margin: 0 auto;
   padding: 20px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 @media (min-width: 768px) {
   .wrapper-soft {
@@ -394,9 +342,26 @@ h6 {
   background: #98e0d9;
 }
 
+.wrapper-tools {
+  border: 1px solid #98e0d9;
+  height: 230px;
+  width: 280px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .wrapper-tools {
+    display: inline-block;
+  }
+}
+
+.wrapper-tools h3 {
+  background: #98e0d9;
+}
+
 /*about*/
 #about {
-<<<<<<< HEAD
   margin: 0 auto;
   text-align: center;
 }
@@ -407,17 +372,11 @@ h6 {
     width: 80%;
   }
 }
-=======
-  height: 80vh;
-  width: 80%;
-  margin: 0 auto; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 .photo-about {
   height: auto;
   width: 90%;
   border-radius: 100%;
-<<<<<<< HEAD
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
@@ -431,13 +390,9 @@ h6 {
     width: 300px;
   }
 }
-=======
-  margin-bottom: 20px; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 .about--text {
   margin: 0 auto;
-<<<<<<< HEAD
   line-height: 30px;
   text-align: left;
   padding: 20px;
@@ -446,32 +401,13 @@ h6 {
   .about--text {
     width: 75%;
   }
-=======
-  line-height: 30px; }
-
-/*form*/
-/*
-form{
-    margin-top: 3%;
-    font-size: 18px;
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
-}
-@media (min-width: 980px) {
-  .about--text {
-    width: 80%;
-    padding: 20px;
-  }
 }
 
 .footer {
   text-align: center;
-<<<<<<< HEAD
   padding-top: 80px;
   width: 100%;
 }
-=======
-  width: 100%; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 .links {
   border-radius: 10px;
@@ -479,31 +415,29 @@ form{
   height: 50px;
   border-radius: 4px;
   width: 50px;
-  padding: 10px; }
-  .links:hover {
-    background: #505657;
-    transition: 1s; }
+  padding: 10px;
+}
+.links:hover {
+  background: #505657;
+  transition: 1s;
+}
 
 #anchors > a > img {
   height: 50px;
-  width: 50px; }
+  width: 50px;
+}
 
 .link--footer {
   padding: 25px 0 30px;
   background: #98e0d9;
   margin: 0 auto;
-<<<<<<< HEAD
-  padding: 50px;
+  width: 100%;
 }
-=======
-  width: 100%; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 .contact {
   padding: 15px;
   font-size: 18px;
   color: #505657;
-<<<<<<< HEAD
   cursor: pointer;
 }
 .contact:after {
@@ -520,21 +454,5 @@ form{
   z-index: 1;
   color: #505657;
 }
-=======
-  cursor: pointer; }
-  .contact:after {
-    transition: 1s;
-    position: absolute;
-    content: '';
-    top: 25px;
-    display: block;
-    width: 100%;
-    background: #E82623;
-    height: 5px;
-    z-index: -1; }
-  .contact:hover:after {
-    z-index: 1;
-    color: #505657; }
->>>>>>> 3d364a509a3c84d9c1cbfde563ec21915c90c8d9
 
 /*# sourceMappingURL=styles.css.map */

@@ -143,17 +143,22 @@
 
 .skills{
     @media (min-width: 768px){
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
         text-align: center;
         padding: 70px 0;
     }
 }
+
+.wrapper-skills{
+    display: flex;
+}
 .wrapper-tech{
+    border: 1px solid $color-contrast;
     text-align: center;
     margin: 0 auto;
     padding: 20px;
-    height: 200px;
+    height: 230px;
     width: 280px;
     @media (min-width: 768px){
         display: inline-block;
@@ -163,7 +168,8 @@
     background: $color-contrast;
 }
 .wrapper-design{
-    height: 200px;
+    border: 1px solid $color-contrast;
+    height: 230px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -179,7 +185,8 @@
     background: $color-contrast;
 }
 .wrapper-soft{
-    height: 200px;
+    border: 1px solid $color-contrast;
+    height: 230px;
     width: 280px;
     text-align: center;
     margin: 0 auto;
@@ -190,6 +197,22 @@
 }
 
 .wrapper-soft h3 {
+    background: $color-contrast;
+}
+
+.wrapper-tools{
+    border: 1px solid $color-contrast;
+    height: 230px;
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    @media (min-width: 768px){
+        display: inline-block;
+    }
+}
+
+.wrapper-tools h3{
     background: $color-contrast;
 }
 

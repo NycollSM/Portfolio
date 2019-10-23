@@ -110,7 +110,6 @@
 /*Github activity*/
 #github{
     margin: 0 auto;
-    margin: 10vh 0;
     padding: 40px 0;
     background: #eeeeee;
     text-align: center;
@@ -139,6 +138,59 @@
 .git--items > p {
     padding: 3px;
 }
+
+.skills{
+    @media (min-width: 768px){
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 70px 0;
+    }
+}
+.wrapper-tech{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    height: 200px;
+    width: 280px;
+    @media (min-width: 768px){
+        display: inline-block;
+    }
+}
+.wrapper-tech h3 {
+    background: $color-contrast;
+}
+.wrapper-design{
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    @media (min-width: 768px){
+        display: inline-block;
+    }
+}
+.wrapper-design h3{
+    background: $color-contrast;
+}
+.wrapper-soft{
+    height: 200px;
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    @media (min-width: 768px){
+        display: inline-block;
+    }
+}
+
+.wrapper-soft h3 {
+    background: $color-contrast;
+}
+
 /*about*/
 #about{
     margin: 0 auto; 

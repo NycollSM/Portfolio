@@ -224,7 +224,7 @@ h6 {
 
 .project2 {
   background: #fcfcfc;
-  width: 269px;
+  width: 272px;
   padding: 4px;
   position: absolute;
   top: 65%;
@@ -234,7 +234,6 @@ h6 {
 /*Github activity*/
 #github {
   margin: 0 auto;
-  margin: 10vh 0;
   padding: 40px 0;
   background: #eeeeee;
   text-align: center;
@@ -262,6 +261,77 @@ h6 {
 
 .git--items > p {
   padding: 3px;
+}
+
+@media (min-width: 768px) {
+  .skills {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 0;
+  }
+}
+
+.wrapper-tech {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  height: 200px;
+  width: 280px;
+  background: url(../../images/cherry1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+@media (min-width: 768px) {
+  .wrapper-tech {
+    display: inline-block;
+  }
+}
+
+.wrapper-tech h3 {
+  background: #98e0d9;
+}
+
+.wrapper-design {
+  height: 200px;
+  background: url(../../images/cherry2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 280px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .wrapper-design {
+    display: inline-block;
+  }
+}
+
+.wrapper-design h3 {
+  background: #98e0d9;
+}
+
+.wrapper-soft {
+  height: 200px;
+  width: 280px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+@media (min-width: 768px) {
+  .wrapper-soft {
+    display: inline-block;
+  }
+}
+
+.wrapper-soft h3 {
+  background: #98e0d9;
 }
 
 /*about*/

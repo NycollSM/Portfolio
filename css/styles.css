@@ -28,7 +28,7 @@ ul {
 
 li {
   padding: 4px;
-  list-style-image: url(../../images/cherries.png);
+  list-style-image: url(/../images/cherries.png);
 }
 
 a {
@@ -88,11 +88,10 @@ h6 {
   display: inline-block;
   margin: 0 auto;
   padding: 10px 1%;
+  width: auto;
 }
 @media (min-width: 768px) {
   #menu {
-    float: right;
-    padding: 20px;
     float: right;
   }
 }
@@ -109,15 +108,15 @@ h6 {
   z-index: 1;
   position: absolute;
   content: "";
-  top: 20px;
+  top: 30px;
   display: block;
   width: 100%;
   background: #98e0d9;
-  height: 5px;
+  height: 3px;
 }
 @media (min-width: 768px) {
   .menu__items {
-    padding: 10px;
+    margin: 0 10px;
   }
 }
 

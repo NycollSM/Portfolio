@@ -26,15 +26,12 @@
     border-radius: 45%;
 }
 #menu{
-    
     display: inline-block;
     margin: 0 auto;
     padding: 10px 1%;
-
+    width: auto;
     @media (min-width:768px) {
         float: right; 
-        padding: 20px;
-        float: right;
     }
 }
 .menu__items{
@@ -48,14 +45,14 @@
         z-index: 1;
         position: absolute;
         content: '';
-        top: 20px;
+        top: 30px;
         display: block;
         width: 100%;
         background: $color-contrast;
-        height: 5px;
+        height: 3px;
     }
     @media (min-width:768px) {
-       padding: 10px;
+       margin: 0 10px;
     }
 }
 .menu__items a {

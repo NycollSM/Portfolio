@@ -26,15 +26,19 @@
     border-radius: 45%;
 }
 #menu{
-    width: 60%;
-    float: right;
-    text-align: right;
-    padding: 0 1%;
+    
     display: inline-block;
+    margin: 0 auto;
+    padding: 10px 1%;
+
+    @media (min-width:768px) {
+        float: right; 
+        padding: 20px;
+        float: right;
+    }
 }
 .menu__items{
     z-index: 1;
-    width: 10%;
     padding-bottom: 5px;
     display: inline-block;
     cursor: pointer;
@@ -49,6 +53,9 @@
         width: 100%;
         background: $color-contrast;
         height: 5px;
+    }
+    @media (min-width:768px) {
+       padding: 10px;
     }
 }
 .menu__items a {

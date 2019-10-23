@@ -1,9 +1,11 @@
 .footer{
     text-align: center;
+    padding-top: 80px;
     width: 100%;
 }
 
 .links{
+    border-radius: 10px;
     background: $color-contrast;
     height: 50px;
     border-radius: 4px;
@@ -24,9 +26,10 @@
     background: $color-contrast;
     margin: 0 auto;
     width: 100%; 
-    
+    padding: 50px;   
 }
 .contact{  
+    
     padding: 15px;
     font-size: 18px;
     color: $global-color;
@@ -39,7 +42,6 @@
         display: block;
         width: 100%;
         background: $color-red;
-        height: 5px;
         z-index: -1;
     }
     &:hover:after{

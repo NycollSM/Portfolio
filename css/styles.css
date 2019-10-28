@@ -140,32 +140,37 @@ h6 {
 }
 
 .works--container {
-  margin-top: 16vh;
+  margin-top: 160px;
   margin: 0 auto;
-  padding: 2%;
   text-align: center;
-  width: 98%;
+  width: 100%;
 }
 @media (min-width: 980px) {
   .works--container {
     margin-top: 30vh;
     max-width: 1200px;
+    padding: 2%;
     text-align: center;
   }
 }
 
 .works--wrapper {
   display: grid;
-  grid-column-gap: 10px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
   text-align: center;
+}
+@media (min-width: 980px) {
+  .works--wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .works--wrapper__size1 {
-  grid-column: 1/1;
+  grid-column: 1;
   background-image: url(../images/ss1.PNG);
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -174,10 +179,10 @@ h6 {
   overflow: hidden;
   position: relative;
   text-align: center;
-  width: 350px;
+  width: 200px;
 }
 .works--wrapper__size1:hover {
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   background: url(../images/ss1.PNG), linear-gradient(#04695f71, #076d6371);
@@ -188,7 +193,7 @@ h6 {
   .works--wrapper__size1 {
     height: 430px;
     margin: 30px;
-    width: 40%;
+    width: 90%;
   }
 }
 
@@ -201,18 +206,15 @@ h6 {
 }
 
 .works--wrapper__size2 {
-  grid-column: 2/2;
+  grid-column: 2;
   background-image: url(../images/ss2.PNG);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  display: inline-block;
-  height: 300px;
-  margin: 30px;
+  height: 274px;
   overflow: hidden;
-  padding: 30px;
   position: relative;
-  width: 220px;
+  width: 180px;
 }
 .works--wrapper__size2:hover {
   background-position: bottom;
@@ -224,7 +226,9 @@ h6 {
 }
 @media (min-width: 980px) {
   .works--wrapper__size2 {
-    width: 30%;
+    grid-column: 2;
+    width: 100%;
+    height: 400px;
   }
 }
 
@@ -255,20 +259,35 @@ h6 {
   padding: 4px;
   position: absolute;
   top: 65%;
-  width: 272px;
+  width: 100%;
+}
+@media (min-width: 980px) {
+  .project2 {
+    width: 230px;
+  }
 }
 
 /*Github activity*/
 #github {
   background: #eeeeee;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 20px 0;
   text-align: center;
+  overflow: hidden;
 }
 
 .wrapper--gitAtv {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
   margin: 0 auto;
+}
+@media (min-width: 980px) {
+  .wrapper--gitAtv {
+    max-width: 1400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .git--items {
@@ -276,12 +295,14 @@ h6 {
   border-bottom: 1px solid #E82623;
   border-left: 3px solid #E82623;
   border-radius: 4px;
-  display: inline-block;
-  height: 100px;
-  margin: 20px;
-  padding: 2%;
+  padding: 10px;
   text-align: initial;
-  width: 20%;
+  width: 180px;
+}
+@media (min-width: 980px) {
+  .git--items {
+    width: 90%;
+  }
 }
 .git--items:hover {
   background: #E82623;
@@ -382,7 +403,6 @@ h6 {
   .wrapper-tools {
     display: inline-block;
     margin: 0 auto;
-    padding: 20px;
     width: 280px;
   }
 }
@@ -406,9 +426,9 @@ h6 {
 
 .photo-about {
   border-radius: 100%;
-  height: auto;
+  height: 50%;
   margin-bottom: 20px;
-  width: 90%;
+  width: 50%;
 }
 @media (min-width: 768px) {
   .photo-about {

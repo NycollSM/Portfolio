@@ -40,23 +40,25 @@
 } fetchJson();
 
 
-  function hearderAnimation (){
-    const headerContainer = document.getElementById('headername');
+ function hidenHeader (){
+   var top = 0;
+   const header = document.getElementById('headername');
+   function animationScroll (){
     const headerName = document.getElementById('name');
-    window.addEventListener("scroll", function (event) {
-      var scroll = this.pageYOffset ;
-      if (scroll !== 0){
-        headerName.style.opacity = '0';
+     let sTop = window.pageXOffset || document.documentElement.scrollTop;
+     if (sTop > top){
+       header.style.top="-210px";
+       headerName.style.opacity = '0';
         headerName.style.transition = '1s';
-      } else {
-        headerName.style.opacity = '1';
-        headerName.style.transition = '1s';
-        console.log(scroll);
-      }
-    });
-  }  
- document.addEventListener('scroll', hearderAnimation);
-  
+     } else{
+       header.style.top="0";
+       headerName.style.opacity = '1';
+       headerName.style.transition = '3.5s';
+     }
+     top = sTop;
+   }
+   window.addEventListener('scroll', animationScroll);
+ } hidenHeader();
     
 
 

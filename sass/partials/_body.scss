@@ -1,11 +1,11 @@
 .works--container{
+    margin-top: 16vh;
     margin: 0 auto;
     padding: 2%;
-    margin-top: 16vh;
     text-align: center;
     @media (min-width:980px) {
-        max-width: 1200px;
         margin-top: 30vh;
+        max-width: 1200px;
         text-align: center;
     }
 }
@@ -16,30 +16,29 @@
 }
 
 .works--wrapper__size1 {
-    position: relative;
     background-image: url(../images/ss1.PNG);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: inline-block;
-    margin: 0 auto;
-    //dfghj
     height: 335px;
-    width: 350px;
-    text-align: center;
+    margin: 0 auto;
     overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 350px;
     &:hover{
-        background:url(../images/ss1.PNG), linear-gradient(#04695f71, #076d6371);
-        background-size: cover;
-        background-repeat: no-repeat;
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background:url(../images/ss1.PNG), linear-gradient(#04695f71, #076d6371);
         opacity: 0.4;
         transition: 1s;
     }
     @media (min-width:1200px) {
     height:430px;
-    width: 40%;
     margin: 30px;
+    width: 40%;
     }
 }
 
@@ -53,22 +52,22 @@
 
 
 .works--wrapper__size2 {
-    position: relative;
     background-image: url(../images/ss2.PNG);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: inline-block;
-    width: 220px;
     height: 300px;
-    padding: 30px;
     margin: 30px;
     overflow: hidden;
+    padding: 30px;
+    position: relative;
+    width: 220px;
     &:hover{
-        background:url(../images/ss2.PNG), linear-gradient(#043530, #054d45);
-        background-size: cover;
-        background-repeat: no-repeat;
         background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background:url(../images/ss2.PNG), linear-gradient(#043530, #054d45);
         opacity: 0.4;
         transition: 1s;
     }
@@ -82,8 +81,8 @@
     bottom: 0;
     left: 0;
     position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
 }
 
 .info--projects {
@@ -99,38 +98,44 @@
 
 .project2{
     background: #fcfcfc;
-    width: 272px;
+    left: 0%;
     padding: 4px;
     position: absolute;
     top: 65%;
-    left: 0%;
+    width: 272px;
 }
 
 
 /*Github activity*/
 #github{
+    background: #eeeeee;
     margin: 0 auto;
     padding: 40px 0;
-    background: #eeeeee;
     text-align: center;
 }
 
+.wrapper--gitAtv{
+    display: flex;
+    margin: 0 auto;
+}
+
+
 .git--items{ 
-    text-align: initial;
     background: #ffffff;
-    padding: 2%;
-    border-left: 3px solid $color-red;
     border-bottom: 1px solid $color-red;
-    margin: 20px;
-    height: 100px;
+    border-left: 3px solid $color-red;
     border-radius: 4px;
-    width: 20%;
     display: inline-block; 
+    height: 100px;
+    margin: 20px;
+    padding: 2%;
+    text-align: initial;
+    width: 20%;
     &:hover{
         background: $color-red;
         color: $color-contrast;
-        transition: 1.3s; 
         opacity: 0.4;
+        transition: 1.3s; 
         a{
             color: $color-contrast;
         }
@@ -143,42 +148,51 @@
 
 .skills{
     @media (min-width: 768px){
-        max-width: 1400px;
         margin: 0 auto;
-        text-align: center;
+        max-width: 1400px;
         padding: 70px 0;
+        text-align: center;
     }
 }
 
 .wrapper-skills{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    @media (min-width: 768px){
     display: flex;
+    }
 }
 .wrapper-tech{
     border: 1px solid $color-contrast;
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px;
     height: 230px;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
     width: 280px;
+    grid-column: 1/2;
     @media (min-width: 768px){
-        display: inline-block;
+        display: inline-block;    
+        margin: 0 auto;
     }
 }
 .wrapper-tech h3 {
     background: $color-contrast;
 }
-.wrapper-design{
+.wrapper-design{ 
+    grid-column: 2/2;   
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 1px solid $color-contrast;
     height: 230px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    width: 280px;
-    text-align: center;
-    margin: 0 auto;
+    margin: 30px;
     padding: 20px;
+    text-align: center;
+    width: 280px;
     @media (min-width: 768px){
         display: inline-block;
+        margin: 0 auto;
     }
 }
 .wrapper-design h3{
@@ -187,12 +201,13 @@
 .wrapper-soft{
     border: 1px solid $color-contrast;
     height: 230px;
-    width: 280px;
-    text-align: center;
-    margin: 0 auto;
+    margin: 30px;
     padding: 20px;
+    text-align: center;
+    width: 280px;
     @media (min-width: 768px){
         display: inline-block;
+        margin: 0 auto;
     }
 }
 
@@ -203,12 +218,14 @@
 .wrapper-tools{
     border: 1px solid $color-contrast;
     height: 230px;
-    width: 280px;
+    margin: 30px;
+    padding: 10px;
     text-align: center;
-    margin: 0 auto;
-    padding: 20px;
+    width: 280px;
     @media (min-width: 768px){
-        display: inline-block;
+        display: inline-block; 
+        margin: 0 auto;
+        padding: 20px;
     }
 }
 
@@ -221,17 +238,17 @@
     margin: 0 auto; 
     text-align: center;
     @media (min-width:980px) {
-        text-align: center;
         margin: 0 auto;
+        text-align: center;
         width: 80%;
     }
 }
 
 .photo-about{ 
-    height: auto;
-    width: 90%;
     border-radius: 100%;
+    height: auto;
     margin-bottom: 20px;
+    width: 90%;
     @media(min-width:768px){
         width: 50%;
     }
@@ -241,10 +258,10 @@
     }
 }
 .about--text{
-    margin: 0 auto;
     line-height: 30px;
-    text-align: left;
+    margin: 0 auto;
     padding: 20px;
+    text-align: left;
     @media(min-width:768px){
         width: 75%;
     }

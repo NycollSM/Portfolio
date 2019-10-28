@@ -17,7 +17,12 @@ h3 {
   padding: 5%;
   text-align: center;
   font-size: 22px;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
+}
+@media (min-width: 768px) {
+  h3 {
+    letter-spacing: 10px;
+  }
 }
 
 ul {
@@ -57,12 +62,17 @@ h6 {
   z-index: 1;
   padding: 5px;
   background: #d80b08;
-  width: 100%;
+  width: 65%;
   color: white;
   border-bottom: 1px solid #E82623;
   position: fixed;
   top: 0;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .nameTransition {
+    width: 100%;
+  }
 }
 
 .name-header-transition, .career-header-transition {
@@ -125,15 +135,15 @@ h6 {
 }
 
 .works--container {
+  margin-top: 16vh;
   margin: 0 auto;
   padding: 2%;
-  margin-top: 16vh;
   text-align: center;
 }
 @media (min-width: 980px) {
   .works--container {
-    max-width: 1200px;
     margin-top: 30vh;
+    max-width: 1200px;
     text-align: center;
   }
 }
@@ -144,31 +154,31 @@ h6 {
 }
 
 .works--wrapper__size1 {
-  position: relative;
   background-image: url(../images/ss1.PNG);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: inline-block;
-  margin: 0 auto;
   height: 335px;
-  width: 350px;
-  text-align: center;
+  margin: 0 auto;
   overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 350px;
 }
 .works--wrapper__size1:hover {
-  background: url(../images/ss1.PNG), linear-gradient(#04695f71, #076d6371);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(../images/ss1.PNG), linear-gradient(#04695f71, #076d6371);
   opacity: 0.4;
   transition: 1s;
 }
 @media (min-width: 1200px) {
   .works--wrapper__size1 {
     height: 430px;
-    width: 40%;
     margin: 30px;
+    width: 40%;
   }
 }
 
@@ -181,23 +191,23 @@ h6 {
 }
 
 .works--wrapper__size2 {
-  position: relative;
   background-image: url(../images/ss2.PNG);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: inline-block;
-  width: 220px;
   height: 300px;
-  padding: 30px;
   margin: 30px;
   overflow: hidden;
+  padding: 30px;
+  position: relative;
+  width: 220px;
 }
 .works--wrapper__size2:hover {
-  background: url(../images/ss2.PNG), linear-gradient(#043530, #054d45);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(../images/ss2.PNG), linear-gradient(#043530, #054d45);
   opacity: 0.4;
   transition: 1s;
 }
@@ -211,8 +221,8 @@ h6 {
   bottom: 0;
   left: 0;
   position: absolute;
-  top: 0;
   right: 0;
+  top: 0;
 }
 
 .info--projects {
@@ -230,38 +240,43 @@ h6 {
 
 .project2 {
   background: #fcfcfc;
-  width: 272px;
+  left: 0%;
   padding: 4px;
   position: absolute;
   top: 65%;
-  left: 0%;
+  width: 272px;
 }
 
 /*Github activity*/
 #github {
+  background: #eeeeee;
   margin: 0 auto;
   padding: 40px 0;
-  background: #eeeeee;
   text-align: center;
 }
 
+.wrapper--gitAtv {
+  display: flex;
+  margin: 0 auto;
+}
+
 .git--items {
-  text-align: initial;
   background: #ffffff;
-  padding: 2%;
-  border-left: 3px solid #E82623;
   border-bottom: 1px solid #E82623;
-  margin: 20px;
-  height: 100px;
+  border-left: 3px solid #E82623;
   border-radius: 4px;
-  width: 20%;
   display: inline-block;
+  height: 100px;
+  margin: 20px;
+  padding: 2%;
+  text-align: initial;
+  width: 20%;
 }
 .git--items:hover {
   background: #E82623;
   color: #98e0d9;
-  transition: 1.3s;
   opacity: 0.4;
+  transition: 1.3s;
 }
 .git--items:hover a {
   color: #98e0d9;
@@ -273,28 +288,37 @@ h6 {
 
 @media (min-width: 768px) {
   .skills {
-    max-width: 1400px;
     margin: 0 auto;
-    text-align: center;
+    max-width: 1400px;
     padding: 70px 0;
+    text-align: center;
   }
 }
 
 .wrapper-skills {
-  display: flex;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 768px) {
+  .wrapper-skills {
+    display: flex;
+  }
 }
 
 .wrapper-tech {
   border: 1px solid #98e0d9;
-  text-align: center;
-  margin: 0 auto;
-  padding: 20px;
   height: 230px;
+  margin: 30px;
+  padding: 20px;
+  text-align: center;
   width: 280px;
+  grid-column: 1/2;
 }
 @media (min-width: 768px) {
   .wrapper-tech {
     display: inline-block;
+    margin: 0 auto;
   }
 }
 
@@ -303,19 +327,21 @@ h6 {
 }
 
 .wrapper-design {
+  grid-column: 2/2;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid #98e0d9;
   height: 230px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  width: 280px;
-  text-align: center;
-  margin: 0 auto;
+  margin: 30px;
   padding: 20px;
+  text-align: center;
+  width: 280px;
 }
 @media (min-width: 768px) {
   .wrapper-design {
     display: inline-block;
+    margin: 0 auto;
   }
 }
 
@@ -326,14 +352,15 @@ h6 {
 .wrapper-soft {
   border: 1px solid #98e0d9;
   height: 230px;
-  width: 280px;
-  text-align: center;
-  margin: 0 auto;
+  margin: 30px;
   padding: 20px;
+  text-align: center;
+  width: 280px;
 }
 @media (min-width: 768px) {
   .wrapper-soft {
     display: inline-block;
+    margin: 0 auto;
   }
 }
 
@@ -344,14 +371,16 @@ h6 {
 .wrapper-tools {
   border: 1px solid #98e0d9;
   height: 230px;
-  width: 280px;
+  margin: 30px;
+  padding: 10px;
   text-align: center;
-  margin: 0 auto;
-  padding: 20px;
+  width: 280px;
 }
 @media (min-width: 768px) {
   .wrapper-tools {
     display: inline-block;
+    margin: 0 auto;
+    padding: 20px;
   }
 }
 
@@ -366,17 +395,17 @@ h6 {
 }
 @media (min-width: 980px) {
   #about {
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
     width: 80%;
   }
 }
 
 .photo-about {
-  height: auto;
-  width: 90%;
   border-radius: 100%;
+  height: auto;
   margin-bottom: 20px;
+  width: 90%;
 }
 @media (min-width: 768px) {
   .photo-about {
@@ -391,10 +420,10 @@ h6 {
 }
 
 .about--text {
-  margin: 0 auto;
   line-height: 30px;
-  text-align: left;
+  margin: 0 auto;
   padding: 20px;
+  text-align: left;
 }
 @media (min-width: 768px) {
   .about--text {

@@ -298,12 +298,6 @@ h6 {
   border-radius: 4px;
   padding: 10px;
   text-align: initial;
-  width: 180px;
-}
-@media (min-width: 980px) {
-  .git--items {
-    width: 90%;
-  }
 }
 .git--items:hover {
   background: #E82623;
@@ -313,6 +307,11 @@ h6 {
 }
 .git--items:hover a {
   color: #98e0d9;
+}
+@media (min-width: 980px) {
+  .git--items {
+    width: 90%;
+  }
 }
 
 .git--items > p {

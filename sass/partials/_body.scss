@@ -149,14 +149,8 @@
     border-bottom: 1px solid $color-red;
     border-left: 3px solid $color-red;
     border-radius: 4px;
-    // display: inline-block;
     padding: 10px;
     text-align: initial;
-    width: 180px;
-    @media (min-width:980px) {
-         width: 90%;
-    }
-   
     &:hover{
         background: $color-red;
         color: $color-contrast;
@@ -165,6 +159,10 @@
         a{
             color: $color-contrast;
         }
+    }    
+    
+    @media (min-width:980px) {
+         width: 90%;
     }
 }
  

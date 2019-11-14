@@ -1,12 +1,12 @@
 (function (){
 //github activity
-  let container = document.getElementById('github'); 
+  let container = document.getElementById('wrapper--Act'); 
   let divInfo;
   function fetchJson() {  
     fetch('https://api.github.com/users/nycollsm/events/public')
         .then (response => response.json())
           .then(data => {
-            let items = data.slice(0, 3);
+            let items = data.slice(0, 4);
             for (const repositories of items){
               divInfo = document.createElement('div');
               divInfo.setAttribute('class', 'git--items');
@@ -39,43 +39,25 @@
     
 } fetchJson();
 
-  function commitResponse(){
-    fetch('https://api.github.com/users/nycollsm/events/public')
-    .then(commit_response => commit_response.json())
-    .then(commit_data => {
-      let reposCommits = commit_data.slice(0,12);
-      //console.log(commits);
-      for(const commits_info of reposCommits) {
-          const newCommit = commits_info.payload.commits;
-          for (const commitInfo in newCommit){
-            for (messageCommit in commitInfo){
-              console.log(messageCommit.message);
-            }
-          }
-      }
-    })
 
-  }commitResponse();
-
-  function hearderAnimation (){
-    const headerContainer = document.getElementById('headername');
+ function hidenHeader (){
+   var top = 0;
+   const header = document.getElementById('headername');
+   function animationScroll (){
     const headerName = document.getElementById('name');
-    window.addEventListener("scroll", function (event) {
-      var scroll = this.pageYOffset ;
-      if (scroll !== 0){
-        headerName.style.opacity = '0';
+     let sTop = window.pageXOffset || document.documentElement.scrollTop;
+     if (sTop > top){
+       header.style.top="-210px";
+       headerName.style.opacity = '0';
         headerName.style.transition = '1s';
-      } else {
-        headerName.style.opacity = '1';
-        headerName.style.transition = '1s';
-        console.log(scroll);
-      }
-    });
-  }  
- document.addEventListener('scroll', hearderAnimation);
-  
-    
-
-
+     } else{
+       header.style.top="0";
+       headerName.style.opacity = '1';
+       headerName.style.transition = '3.5s';
+     }
+     top = sTop;
+   }
+   window.addEventListener('scroll', animationScroll);
+ } hidenHeader();
 
 }());

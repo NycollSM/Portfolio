@@ -59,8 +59,5 @@
    }
    window.addEventListener('scroll', animationScroll);
  } hidenHeader();
-    
-
-
 
 }());

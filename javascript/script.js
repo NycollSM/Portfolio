@@ -1,25 +1,30 @@
 (function (){
-//github activity
+// github activity
   let container = document.getElementById('wrapper--Act'); 
   let divInfo;
   function fetchJson() {  
     fetch('https://api.github.com/users/nycollsm/events/public')
-        .then (response => response.json())
+        .then(response => response.json())
           .then(data => {
             let items = data.slice(0, 4);
-            for (const repositories of items){
-              divInfo = document.createElement('div');
+            for (const repository of items){
+              console.log(repository.repo.url);
+              const urlRepo = repository.repo.url;
+              const str1 = urlRepo.substring(0, 8)
+              const str2 = urlRepo.substring(12, 23)
+              const str3 = urlRepo.substring(29, urlRepo.length)
+              const finalStr = str1 + str2 + str3;
+              console.log('here', finalStr)
+              const divInfo = document.createElement('div');
               divInfo.setAttribute('class', 'git--items');
               const repoName = document.createElement('p');
-              repoName.innerText = 'Repository' + ' ' + repositories.repo.name;
+              repoName.innerText = 'Repository' + ' ' + repository.repo.name;
               const url = document.createElement('a');
-              url.setAttribute('href', repositories.repo.url.html_url);
-              url.innerText = 'url';
+              url.setAttribute('href', finalStr);
+              url.innerText = 'Go to repo';
               const date = document.createElement('p');
-              date.innerText = repositories.created_at;
+              date.innerText = repository.created_at;
               divInfo.appendChild(repoName);
-              // const commit = repositories.payload.commits[0].message;
-              // console.log(commit);
               divInfo.appendChild(date);
              // div.appendChild(divInfo);
               divInfo.appendChild(url);
@@ -40,7 +45,7 @@
 } fetchJson();
 
 
- function hidenHeader (){
+ function hiddenHeader (){
    var top = 0;
    const header = document.getElementById('headername');
    function animationScroll (){
@@ -58,6 +63,6 @@
      top = sTop;
    }
    window.addEventListener('scroll', animationScroll);
- } hidenHeader();
+ } hiddenHeader();
 
 }());
